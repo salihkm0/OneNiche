@@ -8,7 +8,7 @@ import Error404 from './Pages/Error404';
 import Home from "./Pages/Home";
 import ProductDetails from './Pages/ProductDetails';
 import Wishlist from './Pages/Wishlist';
-import { StyledContainer } from './UI/ContainerStyle';
+import { StyledContainer } from './Ui/ContainerStyle';
 
 function App() {
   return (

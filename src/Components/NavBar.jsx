@@ -12,7 +12,7 @@ import {
   StyledNavbarLogo,
   Topbar,
   TopbarHeader,
-} from "../UI/NavbarStyle";
+} from "../Ui/NavbarStyle";
 import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
