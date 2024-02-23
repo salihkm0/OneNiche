@@ -20,6 +20,7 @@ export const CardInsideBox = {
     // padding:"0 10px ",
     // border: "2px solid red",
     // borderColor: "#434241",
+    boxShadow:" rgba(0, 0, 0, 0.35) 0px 5px 15px",
     height:"300px",
     width:"230px",
     marginLeft:"20px",
@@ -71,7 +72,28 @@ export const CardOFPrice = styled.p`
     text-decoration: line-through;
 `
 export const BuyNow = styled.button`
-    /* background-Color:#000000; */
+  /* padding: 20px; */
+    background-color: #f4511e;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-Color:#010101;
+    border:none;
     height:40px;
     width:120px;
+`
+export const AddtoCart = styled.button`
+    background-Color:#ff5500;
+    Color:#ffffff;
+    border:none;
+    height:40px;
+    width:120px;
+`
+export const SpanHover = styled.span`
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 `
