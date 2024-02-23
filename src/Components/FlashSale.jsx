@@ -7,8 +7,8 @@ import {
   FlashSaleH1,
   HeadFS,
   StyledFlashSale,
-} from "../Ui/StyledFlashSale";
-import { CardMainBox } from "../Ui/CardStyle";
+} from "../UI/StyledFlashSale";
+import { CardMainBox } from "../UI/CardStyle";
 
 
 export default function FlashSale() {

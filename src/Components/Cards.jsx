@@ -1,6 +1,6 @@
-import { Box, Stack,} from "@mui/material";
-import React from "react";
-import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg } from "../Ui/CardStyle";
+import { Box, Stack } from '@mui/material'
+import React from 'react'
+import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg,CardMainBox } from "../Ui/CardStyle";
 
 export default function Cards({title,imgSrc}) {
   return (
