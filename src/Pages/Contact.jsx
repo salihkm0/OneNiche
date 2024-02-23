@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Checkout() {
+export default function Contact() {
   return (
     <div>
-      Checkout
+      Contact
     </div>
   )
 }
