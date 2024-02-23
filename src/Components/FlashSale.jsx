@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Cards from "./Cards";
 import {
   CountDownBox,
@@ -10,7 +10,12 @@ import {
 } from "../Ui/StyledFlashSale";
 import { CardMainBox } from "../Ui/CardStyle";
 
+
 export default function FlashSale() {
+    const Img1 ="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/appleairpodsenginUntitled.jpg"
+    const Img2 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvs-fUQPF6VCeFOp7Wx0jfzkKkeb_6UR5NQ&usqp=CAU"
+    const Img3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b4rI5AW28iO23T7DkbHy4RXbLUhSgtTEIQ&usqp=CAU"
+    const Img4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qsBkvANV-BhKx1dr1ym1umis0ALMauxPGg&usqp=CAU"
   return (
     <>
       <Box sx={StyledFlashSale}>
@@ -104,13 +109,10 @@ export default function FlashSale() {
 
           <Box sx={CardMainBox}>
             <Stack direction={"row"}>
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
+              <Cards imgSrc ={Img1} title= "AirPods Max" subtitle ="Founder"/>
+              <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO"/>
+              <Cards imgSrc ={Img3} title= "Laptops"/>
+              <Cards imgSrc ={Img4} title= "Watch Ultra"/>
             </Stack>
           </Box>
 
