@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <Router>
-      <NavBar/>
+      {/* <NavBar/> */}
       <StyledContainer>
        <Routes>
          <Route path="/" element={<Home/>} />

@@ -3,10 +3,14 @@ export const StyledFlashSale = {
     // margin:"100px",
     display:"flex",
     alignItems:"center",
-    justifyContent:"center",
+    // justifyContent:"center",
     height:"500px", 
     width:"100%",
-    borderRadius:" 10px"
+    borderRadius:" 10px",
+    overflowX:"hidden",
+    '@media(max-width:600px)':{
+        height:"320px", 
+    }
 }
 export const FlashSaleH1 = {
     // backgroundColor: "#34797e",
