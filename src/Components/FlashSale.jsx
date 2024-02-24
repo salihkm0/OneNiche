@@ -8,7 +8,7 @@ import {
   HeadFS,
   StyledFlashSale,
 } from "../Ui/FlashSaleStyled";
-import { CardMainBox } from "../Ui/CardStyle";
+import { CardBottmMain, CardMainBox, ViewAll } from "../Ui/CardStyle";
 
 
 export default function FlashSale() {
@@ -16,6 +16,7 @@ export default function FlashSale() {
     const Img2 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvs-fUQPF6VCeFOp7Wx0jfzkKkeb_6UR5NQ&usqp=CAU"
     const Img3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b4rI5AW28iO23T7DkbHy4RXbLUhSgtTEIQ&usqp=CAU"
     const Img4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qsBkvANV-BhKx1dr1ym1umis0ALMauxPGg&usqp=CAU"
+    const Img5 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-yZ8nf8gQFNKvCRr2iaf3enZz3Pswin4UQ&usqp=CAU"
   return (
     <>
       <Box sx={StyledFlashSale}>
@@ -109,11 +110,15 @@ export default function FlashSale() {
 
           <Box sx={CardMainBox}>
             <Stack direction={"row"}>
-              <Cards imgSrc ={Img1} title= "AirPods Max" subtitle ="Founder"/>
-              <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO"/>
-              <Cards imgSrc ={Img3} title= "Laptops"/>
-              <Cards imgSrc ={Img4} title= "Watch Ultra"/>
+              <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} rating={88}/>
+              <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO" star={2} rating={50}/>
+              <Cards imgSrc ={Img3} title= "Laptops" star={3} rating={46}/>
+              <Cards imgSrc ={Img4} title= "Watch Ultra" star={4.5} rating={19}/>
+              <Cards imgSrc ={Img5} title= "LED UHD 4K Tv" star={2.5} rating={39}/>
             </Stack>
+            <CardBottmMain>
+              <ViewAll $primary>View All Products</ViewAll>
+            </CardBottmMain>
           </Box>
 
         </Stack>

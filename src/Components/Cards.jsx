@@ -1,8 +1,8 @@
-import { Box, Stack } from '@mui/material'
+import { Box, Rating, Stack, Typography } from '@mui/material'
 import React from 'react'
-import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg,CardMainBox, AddtoCart, SpanHover } from "../Ui/CardStyle";
+import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg, AddtoCart, CardBottmMain, RatingBox, RatingSt } from "../Ui/CardStyle";
 
-export default function Cards({title,imgSrc}) {
+export default function Cards({title,imgSrc,star,rating}) {
   return (
     <>
       <Box sx={CardInsideBox}>
@@ -10,14 +10,21 @@ export default function Cards({title,imgSrc}) {
           <ProductImg src={imgSrc} />
         </CardImgCont>
           <CardTitle>{title}</CardTitle>
-          <Stack spacing={2} direction={'row'}>
-             <CardOGPrice>$20</CardOGPrice>
-             <CardOFPrice>$40</CardOFPrice>
-          </Stack>
-          <Stack direction={"row"}>
-           <BuyNow><SpanHover>Buy Now </SpanHover></BuyNow>
-           <AddtoCart><SpanHover> Add to Cart</SpanHover></AddtoCart>
-        </Stack>
+          
+            <RatingBox>
+               <Stack direction={"row"} spacing={1}>
+                    <Rating name="half-rating-read" defaultValue={star} precision={0.5} sx={RatingSt} readOnly/>
+                    <Typography variant="p">({rating})</Typography>
+               </Stack>
+            </RatingBox>
+
+          <Stack  direction={'row'}>
+             <CardOGPrice>₹200</CardOGPrice>
+             <CardOFPrice>₹400</CardOFPrice>
+            </Stack>
+            <Stack direction={"row"}>
+              <BuyNow>Buy Now</BuyNow>
+            </Stack>
       </Box>
     </>
   );
