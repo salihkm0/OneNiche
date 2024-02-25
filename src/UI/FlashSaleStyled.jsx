@@ -1,11 +1,11 @@
 export const StyledFlashSale = {
-    backgroundColor: "#d4d4d48f",
+    backgroundColor: "#d4d4d4bd",
     // margin:"100px",
+    // borderRadius:" 10px",
     display:"flex",
     alignItems:"center",
     height:"500px", 
     width:"100%",
-    borderRadius:" 10px",
     overflow:"hidden", //removed X
     '@media(max-width:600px)':{
         height:"320px",
@@ -30,7 +30,6 @@ export const CountDownBox ={
     marginLeft:"20px",
 }
 export const CountDownFS ={
-    // marginLeft:"10px",
     // backgroundColor: "#b91818",
     height:"45px",
     width:"40px",

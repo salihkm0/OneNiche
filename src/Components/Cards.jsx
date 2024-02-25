@@ -2,7 +2,7 @@ import { Box, Rating, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg, AddtoCart, CardBottmMain, RatingBox, RatingSt, RatingNu } from "../Ui/CardStyle";
 
-export default function Cards({title,imgSrc,star,rating}) {
+export default function Cards({title,imgSrc,star,price}) {
   return (
     <>
       <Box sx={CardInsideBox}>
@@ -18,7 +18,7 @@ export default function Cards({title,imgSrc,star,rating}) {
             </RatingBox>
 
             <Stack justifyContent={"center"}  direction={'row'}>
-             <CardOGPrice>From ₹200</CardOGPrice>
+             <CardOGPrice>From ₹{price}</CardOGPrice>
             </Stack>
             
             {/* <CardOFPrice>₹400</CardOFPrice> */}

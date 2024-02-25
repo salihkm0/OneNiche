@@ -9,12 +9,14 @@ export const CardMainBox = {
   overflowX: "scroll",
   display:"flex",
   alignItems:" center",
-  justifyContent:" center",
   '@media (max-width:600px)': {
     // height:"75%",
     // width:"75%",
     // overflowX: "none",
-    // display:"flex"
+    // display:"flex",
+  },
+  '@media (min-width:1920px)': {
+    justifyContent:"center",
 
   },
   "&::-webkit-scrollbar": {
@@ -35,9 +37,13 @@ export const CardInsideBox = {
     height: "190px",
     width: "165px",
   },
+  
   '&:hover': {
-    backgroundColor: '#b7b7b7f7',
-    transform: "translate(3px, 10px) scale(1)",
+    backgroundColor: '#f8f8f8f7',
+    transform: "translateY(-5px) scale(1.005) translateZ(0)",
+    boxShadow:" 0 24px 36px rgba(0,0,0,0.11) 0 24px 46px var(--box-shadow-color)",
+    transition: "transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out",
+
   }
 
 };
