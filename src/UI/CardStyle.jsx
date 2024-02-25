@@ -7,6 +7,9 @@ export const CardMainBox = {
   padding: "10px",
   paddingRight:"20px",
   overflowX: "scroll",
+  display:"flex",
+  alignItems:" center",
+  justifyContent:" center",
   '@media (max-width:600px)': {
     height:"75%",
     width:"75%",
@@ -137,7 +140,6 @@ export const CardBottmMain = styled.div`
   height: 70px;
   width: 100%px;
   /* margin-left:20px; */
-  '@media (max-width:600px)': {}
 `;
 export const ViewAll = styled.button`
   /* background-color: #ff7300; */

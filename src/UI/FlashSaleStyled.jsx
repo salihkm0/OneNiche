@@ -3,7 +3,6 @@ export const StyledFlashSale = {
     // margin:"100px",
     display:"flex",
     alignItems:"center",
-    // justifyContent:"center",
     height:"500px", 
     width:"100%",
     borderRadius:" 10px",

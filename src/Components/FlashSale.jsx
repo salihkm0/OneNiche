@@ -116,8 +116,7 @@ export default function FlashSale() {
               <Cards imgSrc ={Img4} title= "Watch Ultra" star={4.5} rating={19}/>
               <Cards imgSrc ={Img5} title= "LED UHD 4K Tv" star={2.5} rating={39}/>
               <Cards imgSrc ={Img5} title= "LED UHD 4K Tv" star={2.5} rating={39}/>
-            </Stack>
-            
+            </Stack>    
           </Box>
           <CardBottmMain>
               <ViewAll $primary>View All Products</ViewAll>
