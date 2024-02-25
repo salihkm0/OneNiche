@@ -1,6 +1,6 @@
 import React from "react";
 import { Topbar, TopbarHeader } from "../Ui/NavbarStyle";
-import Navbar from "./Navbar";
+import Navbar from "./NavBar";
 
 export default function Header() {
   return (

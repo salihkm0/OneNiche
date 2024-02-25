@@ -34,6 +34,10 @@ export const CardInsideBox = {
   '@media (max-width:600px)': {
     height: "190px",
     width: "165px",
+  },
+  '&:hover': {
+    backgroundColor: '#b7b7b7f7',
+    transform: "translate(3px, 10px) scale(1)",
   }
 
 };
@@ -70,8 +74,11 @@ export const CardImgCont = styled.div`
 `;
 export const CardTitle = styled.h1`
   /* background-Color:#000000; */
+    /* margin-left: 10px; */
   font-size: 15px;
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 6px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
@@ -84,34 +91,33 @@ export const CardTitle = styled.h1`
 `;
 export const CardOGPrice = styled.p`
   /* background-Color:#000000;  */
+    /* margin-left: 10px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  margin-left: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
   @media (max-width:600px) {
     font-size: 15px;
-    align-items: start;
-    justify-content: start;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 5px;
   }
 `;
-export const CardOFPrice = styled.p`
-  /* background-Color:#000000; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  margin-left: 10px;
-  color: #e42f0f;
-  text-decoration: line-through;
-  @media (max-width:600px) {
-    font-size: 10px;
-    align-items: start;
-    justify-content: start;
-  }
-`;
+// export const CardOFPrice = styled.p`
+//   /* background-Color:#000000; */
+//   font-size: 12px;
+//   margin-left: 10px;
+//   color: #e42f0f;
+//   text-decoration: line-through;
+//   @media (max-width:600px) {
+//     font-size: 10px;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// `;
 export const BuyNow = styled.button`
   color: #ffffff;
   font-size: 15px;
@@ -158,9 +164,11 @@ export const ViewAll = styled.button`
   } */
 `;
 export const RatingBox = styled.div`
-  font-size: 13px;
-  margin-left: 9px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 export const RatingSt = {
-    fontSize:" 13px",
+    fontSize:" 10px",
 }

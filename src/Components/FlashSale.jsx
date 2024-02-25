@@ -110,7 +110,7 @@ export default function FlashSale({days,hours,minutes,seconds}) {
 
           <Box sx={CardMainBox}>
             <Stack direction={"row"}>
-              <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} rating={88}/>
+              <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} />
               <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO" star={2} rating={50}/>
               <Cards imgSrc ={Img3} title= "Laptops" star={3} rating={46}/>
               <Cards imgSrc ={Img4} title= "Watch Ultra" star={4.5} rating={19}/>

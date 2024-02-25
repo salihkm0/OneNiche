@@ -1,5 +1,5 @@
 export const StyledFlashSale = {
-    backgroundColor: "#b6b1b18f",
+    backgroundColor: "#d4d4d48f",
     // margin:"100px",
     display:"flex",
     alignItems:"center",
