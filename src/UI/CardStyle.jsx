@@ -11,10 +11,10 @@ export const CardMainBox = {
   alignItems:" center",
   justifyContent:" center",
   '@media (max-width:600px)': {
-    height:"75%",
-    width:"75%",
-    overflowX: "none",
-    display:"flex"
+    // height:"75%",
+    // width:"75%",
+    // overflowX: "none",
+    // display:"flex"
 
   },
   "&::-webkit-scrollbar": {
@@ -26,7 +26,7 @@ export const CardInsideBox = {
   // borderColor: "#434241",
   boxShadow:`rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px`,
-  height: "300px",
+  height: "100%",
   width: "230px",
   marginLeft: "10px",
   marginRight: "10px",
@@ -44,8 +44,8 @@ export const ProductImg = styled.img`
   transform: scale(1.05);
 
   @media (max-width: 600px) {
-    height: 140px; // 180px * 0.8 = 144px
-    width: 165px; // 150px * 0.8 = 120px
+    height: 140px; 
+    width: 165px;
     margin-left: 10px;
     margin-top: 16px;
   }

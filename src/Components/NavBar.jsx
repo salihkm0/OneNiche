@@ -1,61 +1,98 @@
-import SearchIcon from "@mui/icons-material/Search";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import {
+    MainSearchCloseIcon,
+  MainSearchCloseIconContainer,
+  MobileNavClose,
+  MobileNavOpen,
+  Nav,
+  NavLinks,
+  NavLogo,
+  NavSearch,
+  NavSearchInput,
+  SearchCloseIcon,
+  SearchIcon,
+  SubSearchCloseIconContainer,
+} from "../Ui/NavbarStyle";
+import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import {
-  Leftside,
-  NavBarLi,
-  NavbarLinksContainer,
-  SearchContainer,
-  SearchInput,
-  StyledLink,
-  StyledNavbar,
-  StyledNavbarLogo,
-  Topbar,
-  TopbarHeader,
-} from "../Ui/NavbarStyle";
-import { Link, NavLink } from "react-router-dom";
+import { Box, Stack } from "@mui/material";
 
-export default function NavBar() {
+export default function Navbar() {
+  const [openSearch, setOpenSearch] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
   return (
     <>
-      <Topbar>
-        <TopbarHeader>
-          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-          <a
-            style={{
-              color: "#fff",
-              marginLeft: "5px",
-              textDecoration: "underline",
-            }}
-            href="#"
-          >
-            Shop now
-          </a>
-        </TopbarHeader>
-      </Topbar>
-      <StyledNavbar>
-        <StyledNavbarLogo>
-          <a href="/">OneNiche </a>
-        </StyledNavbarLogo>
-        <NavbarLinksContainer>
-          <StyledLink to={"/"}>Home</StyledLink>
-          <StyledLink to={"/contact"}>Contact</StyledLink>
-          <StyledLink to={"/about"}>About</StyledLink>
-          <StyledLink to={"/"}>Sign Up</StyledLink>
-        </NavbarLinksContainer>
-        <Leftside>
-          <SearchContainer>
-            <SearchInput placeholder="What are you looking for?" type="text" />
-            <SearchIcon />
-          </SearchContainer>
+      <Nav>
+        <MobileNavOpen>
+          {mobileNav ? (
+            <></>
+          ) : (
+            <DehazeOutlinedIcon onClick={() => setMobileNav(!mobileNav)} />
+          )}
+        </MobileNavOpen>
+        <NavLogo><NavLink to="/">OneNiche</NavLink></NavLogo>
+        <NavLinks openSearch={openSearch} mobileNav={mobileNav}>
+          <MobileNavClose>
+            <CloseOutlinedIcon onClick={() => setMobileNav(!mobileNav)} />
+          </MobileNavClose>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to="/">Sign Up</NavLink>
+          </li>
+        </NavLinks>
+        <Stack
+          alignItems={"center"}
+          spacing={2}
+          direction={"row"}
+          height={"100%"}
+        >
+          {openSearch ? (
+            <MainSearchCloseIconContainer openSearch = {openSearch}>
+            <CloseOutlinedIcon
+              onClick={() => setOpenSearch(!openSearch)}
+              sx={MainSearchCloseIcon}
+            />
+            </MainSearchCloseIconContainer>
+          ) : (
+            <div>
+            <SearchOutlinedIcon
+              onClick={() => setOpenSearch(!openSearch)}
+              sx={{
+                color: "#000",
+                fontSize: "30px",
+                cursor: "pointer",
+                top: "-10px",
+              }}
+            />
+            </div>
+          )}
+          <NavSearch openSearch={openSearch}>
+            <SearchOutlinedIcon sx={SearchIcon} />
+            <NavSearchInput type="text" placeholder="Search here..." />
+              <SubSearchCloseIconContainer openSearch = {openSearch}>
+            <CloseOutlinedIcon sx={SearchCloseIcon} onClick={() => setOpenSearch(!openSearch)}/>
+            </SubSearchCloseIconContainer>
+          </NavSearch>
           <NavLink to={"/wishlist"}>
             <FavoriteBorderOutlinedIcon />
           </NavLink>
           <NavLink to={"/cart"}>
             <ShoppingCartOutlinedIcon />
           </NavLink>
-        </Leftside>
-      </StyledNavbar>
+        </Stack>
+      </Nav>
     </>
   );
 }

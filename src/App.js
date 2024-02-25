@@ -1,5 +1,5 @@
 import { BrowserRouter as Router , Route ,Routes } from 'react-router-dom';
-import NavBar from './Components/NavBar';
+import Header from './Components/Header';
 import About from './Pages/About';
 import Cart from './Pages/Cart';
 import Checkout from './Pages/Checkout';
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <Router>
-      {/* <NavBar/> */}
+      <Header/>
       <StyledContainer>
        <Routes>
          <Route path="/" element={<Home/>} />

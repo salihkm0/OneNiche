@@ -11,7 +11,7 @@ import {
 import { CardBottmMain, CardMainBox, ViewAll } from "../Ui/CardStyle";
 
 
-export default function FlashSale() {
+export default function FlashSale({days,hours,minutes,seconds}) {
     const Img1 ="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/appleairpodsenginUntitled.jpg"
     const Img2 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvs-fUQPF6VCeFOp7Wx0jfzkKkeb_6UR5NQ&usqp=CAU"
     const Img3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b4rI5AW28iO23T7DkbHy4RXbLUhSgtTEIQ&usqp=CAU"
@@ -41,7 +41,7 @@ export default function FlashSale() {
                       Day
                     </Typography>
                     <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      03
+                      {days}
                     </Typography>
                   </Stack>
                   <Stack>
@@ -60,7 +60,7 @@ export default function FlashSale() {
                       Hours
                     </Typography>
                     <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      23
+                      {hours}
                     </Typography>
                   </Stack>
 
@@ -80,7 +80,7 @@ export default function FlashSale() {
                       Minutes
                     </Typography>
                     <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      19
+                      {minutes}
                     </Typography>
                   </Stack>
 
@@ -100,7 +100,7 @@ export default function FlashSale() {
                       Seconds
                     </Typography>
                     <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      56
+                      {seconds}
                     </Typography>
                   </Stack>
                 </Stack>

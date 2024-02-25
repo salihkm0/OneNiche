@@ -6,9 +6,10 @@ export const StyledFlashSale = {
     height:"500px", 
     width:"100%",
     borderRadius:" 10px",
-    overflowX:"hidden",
+    overflow:"hidden", //removed X
     '@media(max-width:600px)':{
-        height:"320px", 
+        height:"320px",
+        width:"85vw", //added width 
     }
 }
 export const FlashSaleH1 = {
