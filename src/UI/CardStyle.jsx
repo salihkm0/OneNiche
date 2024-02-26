@@ -2,62 +2,77 @@ import styled from "styled-components";
 
 
 export const CardMainBox = {
-  // backgroundColor: "#090808ad",
+  backgroundColor: "#090808ad",
+      // overflowX: "scroll",
   width: "88vw",
   padding: "10px",
   paddingRight:"20px",
-  overflowX: "scroll",
   display:"flex",
   alignItems:" center",
+  justifyContent:"center",
+
   '@media (max-width:600px)': {
-    // height:"75%",
-    // width:"75%",
+
+ 
     // overflowX: "none",
     // display:"flex",
-  },
-  '@media (min-width:1920px)': {
-    justifyContent:"center",
+   width:"370px",
+   height:"410px",
+   paddingRight:"20px",
+   alignItems:"start",
+   display:"flex",
+   flexDirection:"column",
+   flexWrap:" wrap;",
 
   },
-  "&::-webkit-scrollbar": {
-    display: "hidden",
-  },
-};
+  // '@media (min-width:1920px)': {
+  //   justifyContent:"center",
+
+  // },
+
+  // "&::-webkit-scrollbar": {
+  //   display: "hidden",
+  // },
+}
 export const CardInsideBox = {
-  // backgroundColor: "#dcdcdcf7",
+  backgroundColor: "#dcdcdcf7",
   // borderColor: "#434241",
+    // width: "230px",
   boxShadow:`rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px`,
+  
   height: "100%",
-  width: "230px",
   marginLeft: "10px",
   marginRight: "10px",
   borderRadius:" 10px",
   '@media (max-width:600px)': {
-    height: "190px",
+    height: "185px",
     width: "165px",
+    paddingBottom:"10px",
   },
   
   '&:hover': {
     backgroundColor: '#f8f8f8f7',
     transform: "translateY(-5px) scale(1.005) translateZ(0)",
     boxShadow:" 0 24px 36px rgba(0,0,0,0.11) 0 24px 46px var(--box-shadow-color)",
-    transition: "transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out",
+    transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+
 
   }
-
 };
 
 export const ProductImg = styled.img`
-  height: 200px;
+  height: 165px;
   width: 250px;
+  object-fit:cover;
   transform: scale(1.05);
 
   @media (max-width: 600px) {
-    height: 140px; 
+    height: 125px;
     width: 165px;
-    margin-left: 10px;
-    margin-top: 16px;
+    object-fit:cover;
+    // margin-left: 10px;
+    // margin-top: 16px;
   }
 `;
 
@@ -75,7 +90,8 @@ export const CardImgCont = styled.div`
   width: 100%;
   overflow: hidden;
   @media(max-width:600px){
-    height: 55%;
+    height: 75%;
+    margin-bottom:6px;
   }
 `;
 export const CardTitle = styled.h1`
@@ -124,26 +140,26 @@ export const CardOGPrice = styled.p`
 //     justify-content: center;
 //   }
 // `;
-export const BuyNow = styled.button`
-  color: #ffffff;
-  font-size: 15px;
-  cursor: pointer;
-  background-color: #010101;
-  border: none;
-  height: 44px;
-  width: 100%;
-  transition: all 0.5s  ease-in-out;
-  border-radius: 5px;
+// export const BuyNow = styled.button`
+//   color: #ffffff;
+//   font-size: 15px;
+//   cursor: pointer;
+//   background-color: #010101;
+//   border: none;
+//   height: 44px;
+//   width: 100%;
+//   transition: all 0.5s  ease-in-out;
+//   border-radius: 5px;
 
-  &:hover {
-    background-color: #c9c9c9cd;
-    color: #010101;
-    font-size: 18px;
-  }
-  @media (max-width:600px) {
-    height: 36px;
-  }
-`;
+//   &:hover {
+//     background-color: #c9c9c9cd;
+//     color: #010101;
+//     font-size: 18px;
+//   }
+//   @media (max-width:600px) {
+//     height: 36px;
+//   }
+// `;
 export const CardBottmMain = styled.div`
   /* background-color:#0c0c0ccd;  */
   display: flex;
@@ -154,20 +170,26 @@ export const CardBottmMain = styled.div`
   /* margin-left:20px; */
 `;
 export const ViewAll = styled.button`
-  /* background-color: #ff7300; */
-  background-color:${props => props.$primary ? "#ff7300" : "#BF4F74"}; 
+  background-color:#ff7300; 
+  color: #010101;
   border: none;
   height: 50px;
   width:120px;
   font-size: 12px;
   margin-top:7px;
   border-radius: 5px;
-  /* &:hover {
-    background-color: #d92f2fa0;
+  @media (max-width:600px) {
+    height: 40px;
+    width:80px;
+    margin-bottom:10px;
+  }
+  &:hover {
+    background-color: #ff7300d7;
     color: #010101;
     font-size: 13px;
+  }
+  
 
-  } */
 `;
 export const RatingBox = styled.div`
   font-size: 10px;

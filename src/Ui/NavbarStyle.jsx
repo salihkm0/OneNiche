@@ -54,13 +54,13 @@ export const NavLinks = styled.ul`
     top: 0;
     left: ${(props) => (props.mobileNav ? "0" : "-100%")};
     height: 100%;
-    max-width: 280px;
+    max-width: 180px;
     width: 100%;
     padding-top: 100px;
     row-gap: 30px;
     flex-direction: column;
-    background-color: #adadad70;
-    backdrop-filter: blur(10px);
+    background-color: #7c7c7c;
+    /* backdrop-filter: blur(10px); */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
     z-index: 100;
@@ -102,7 +102,7 @@ export const NavSearchInput = styled.input`
   padding: 0 15px 0 45px;
   @media screen and (max-width: 946px) {
     color: #ffffff;
-    background-color: #9090903c;
+    background-color: #020202;
   }
 `;
 

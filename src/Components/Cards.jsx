@@ -18,7 +18,7 @@ export default function Cards({title,imgSrc,star,price}) {
             </RatingBox>
 
             <Stack justifyContent={"center"}  direction={'row'}>
-             <CardOGPrice>From ₹{price}</CardOGPrice>
+            <CardOGPrice>From ₹{price}</CardOGPrice>
             </Stack>
             
             {/* <CardOFPrice>₹400</CardOFPrice> */}

@@ -2,8 +2,10 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Cards from "./Cards";
 import {
+  ConDSpacer,
   CountDownBox,
   CountDownFS,
+  FSTypoH1,
   FlashSaleH1,
   HeadFS,
   StyledFlashSale,
@@ -17,7 +19,7 @@ export default function FlashSale({days,hours,minutes,seconds}) {
     const Img3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b4rI5AW28iO23T7DkbHy4RXbLUhSgtTEIQ&usqp=CAU"
     const Img4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qsBkvANV-BhKx1dr1ym1umis0ALMauxPGg&usqp=CAU"
     const Img5 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-yZ8nf8gQFNKvCRr2iaf3enZz3Pswin4UQ&usqp=CAU"
-    const Img6 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4FmLD0c-H6iyemLJr9jI63636h5_f75Qr1u_5z43cWgh4XOi0UEhZ2Ogul9alC8J9ck&usqp=CAU"
+    const Img6 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4FmLD0c-H6iyemLJr9jI63636h5_f75Qr1u_5z43cWgh4XOi0UEhZ2Ogul9alC8J9ck&usqp=CAU"  
   return (
     <>
       <Box sx={StyledFlashSale}>
@@ -25,9 +27,12 @@ export default function FlashSale({days,hours,minutes,seconds}) {
           <Box sx={HeadFS}>
             <Stack direction={"row"}>
               <Box sx={FlashSaleH1}>
-                <Typography variant="h1" fontSize={22}>
+                <FSTypoH1>
+                Flash Sales
+                </FSTypoH1>
+                {/* <Typography variant="h1" sx={FSTypoH1}>
                   Flash Sales
-                </Typography>
+                </Typography> */}
               </Box>
               <Box sx={CountDownBox}>
                 <Stack direction={"row"}>
@@ -45,7 +50,7 @@ export default function FlashSale({days,hours,minutes,seconds}) {
                     </Typography>
                   </Stack>
                   <Stack>
-                    <Typography variant="h1" fontSize={20} marginTop={1.5}>
+                    <Typography variant="h1" sx={ConDSpacer}>
                       :
                     </Typography>
                   </Stack>
@@ -65,7 +70,7 @@ export default function FlashSale({days,hours,minutes,seconds}) {
                   </Stack>
 
                   <Stack>
-                    <Typography variant="h1" fontSize={20} marginTop={1.5}>
+                  <Typography variant="h1" sx={ConDSpacer}>
                       :
                     </Typography>
                   </Stack>
@@ -85,7 +90,7 @@ export default function FlashSale({days,hours,minutes,seconds}) {
                   </Stack>
 
                   <Stack>
-                    <Typography variant="h1" fontSize={20} marginTop={1.5}>
+                  <Typography variant="h1" sx={ConDSpacer}>
                       :
                     </Typography>
                   </Stack>
@@ -108,18 +113,18 @@ export default function FlashSale({days,hours,minutes,seconds}) {
             </Stack>
           </Box>
 
-          <Box sx={CardMainBox}>
+          <Box sx={CardMainBox} justifyContent={"space-around"}>
             <Stack direction={"row"}>
               <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} price={1499}/>
               <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO" star={2} price={1000} />
               <Cards imgSrc ={Img3} title= "Laptops" star={3} price={5000}/>
               <Cards imgSrc ={Img4} title= "Watch Ultra" star={4.5} price={1299}/>
-              <Cards imgSrc ={Img5} title= "Led UHD 4K Tv" star={4.5} price={1000}/>
-              <Cards imgSrc ={Img6} title= "Refrigerators" star={3.5} price={7999}/>
+              {/* <Cards imgSrc ={Img5} title= "UHD 4K Tv" star={4.5} price={1000}/>
+              <Cards imgSrc ={Img6} title= "Refrigerators" star={3.5} price={7999}/> */}
             </Stack>    
           </Box>
           <CardBottmMain>
-              <ViewAll $primary>View All Products</ViewAll>
+              <ViewAll $primary>View All</ViewAll>
             </CardBottmMain>
         </Stack>
       </Box>
