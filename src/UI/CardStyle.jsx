@@ -3,36 +3,33 @@ import styled from "styled-components";
 
 export const CardMainBox = {
   // backgroundColor: "#090808ad",
-      // overflowX: "scroll",
+  overflowX: "scroll",
   width: "88vw",
   padding: "10px",
   paddingRight:"20px",
   display:"flex",
   alignItems:" center",
-  justifyContent:"center",
+  justifyContent:"start",
+
 
   '@media (max-width:600px)': {
-
- 
-    // overflowX: "none",
-    // display:"flex",
    width:"370px",
    height:"410px",
    paddingRight:"20px",
    alignItems:"start",
    display:"flex",
    flexDirection:"column",
-   flexWrap:" wrap;",
+   flexWrap:" wrap",
 
   },
-  // '@media (min-width:1920px)': {
-  //   justifyContent:"center",
+  '@media (min-width:1920px)': {
+    justifyContent:"center",
 
-  // },
+  },
 
-  // "&::-webkit-scrollbar": {
-  //   display: "hidden",
-  // },
+  "&::-webkit-scrollbar": {
+    display: "hidden",
+  },
 }
 export const CardInsideBox = {
   // backgroundColor: "#dcdcdcf7",
@@ -49,6 +46,8 @@ export const CardInsideBox = {
     height: "185px",
     width: "165px",
     paddingBottom:"10px",
+    margin:"2.5px",
+    marginLeft:"3px"
   },
   '@media (min-width:601px)': {
     '&:hover': {

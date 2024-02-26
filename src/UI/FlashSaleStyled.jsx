@@ -15,11 +15,12 @@ export const StyledFlashSale = {
 
     '@media(max-width:600px)':{
         height:"525px",
-        width:"85vw", //added width 
+        width:"86vw", //added width 
         display:"flex",
         alignItems:"center",
+        marginLeft:"3px",
         justifyContent:"center",
-        marginLeft:"6px",
+        paddingLeft:"6.5px"
     }
 }
 export const FlashSaleH1 = {
