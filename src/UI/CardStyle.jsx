@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const CardMainBox = {
-  backgroundColor: "#090808ad",
+  // backgroundColor: "#090808ad",
       // overflowX: "scroll",
   width: "88vw",
   padding: "10px",
@@ -35,7 +35,7 @@ export const CardMainBox = {
   // },
 }
 export const CardInsideBox = {
-  backgroundColor: "#dcdcdcf7",
+  // backgroundColor: "#dcdcdcf7",
   // borderColor: "#434241",
     // width: "230px",
   boxShadow:`rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -50,16 +50,16 @@ export const CardInsideBox = {
     width: "165px",
     paddingBottom:"10px",
   },
-  
-  '&:hover': {
-    backgroundColor: '#f8f8f8f7',
-    transform: "translateY(-5px) scale(1.005) translateZ(0)",
-    boxShadow:" 0 24px 36px rgba(0,0,0,0.11) 0 24px 46px var(--box-shadow-color)",
-    transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
-
-
+  '@media (min-width:601px)': {
+    '&:hover': {
+      backgroundColor: '#f8f8f8f7',
+      transform: "translateY(-5px) scale(1.005) translateZ(0)",
+      boxShadow:" 0 24px 36px rgba(0,0,0,0.11) 0 24px 46px var(--box-shadow-color)",
+      transition: "transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out",
+    },
   }
-};
+  
+}
 
 export const ProductImg = styled.img`
   height: 165px;

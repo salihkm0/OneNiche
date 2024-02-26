@@ -50,7 +50,7 @@ export const FSTypoH1=styled.h1`
 `
 export const HeadFS = {
     // width:"100%",
-    backgroundColor: "#17c2ce",
+    // backgroundColor: "#17c2ce",
     height:"45px", 
     color:"#000000",
     display:"flex",
