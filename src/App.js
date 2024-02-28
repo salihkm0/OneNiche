@@ -4,11 +4,12 @@ import About from './Pages/About';
 import Cart from './Pages/Cart';
 import Checkout from './Pages/Checkout';
 import Contact from './Pages/Contact';
-import Error404 from './Pages/Error404';
 import Home from "./Pages/Home";
 import ProductDetails from './Pages/ProductDetails';
 import Wishlist from './Pages/Wishlist';
 import { StyledContainer } from './Ui/ContainerStyle';
+import NotFoundPage from './Pages/Error404';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -25,10 +26,11 @@ function App() {
          <Route path="/product/:id" element={<ProductDetails />} />
          <Route path="/cart" element={<Cart />} />
          <Route path="/checkout" element={<Checkout />} />
-         <Route path="*" element={<Error404 />} />
-       </Routes>
+            <Route path="*" element={< NotFoundPage />} />
+          </Routes>
+          
        </StyledContainer>
-       
+       <Footer/>
      </Router>
     </>
   );
