@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <HomeContainerMain>
-        <FlashSale/>  
+        <FlashSale/>
          {/* <Cart/> */}
 
     </HomeContainerMain>
