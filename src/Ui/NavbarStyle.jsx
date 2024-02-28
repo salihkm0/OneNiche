@@ -77,6 +77,9 @@ export const NavSearch = styled.div`
   opacity: ${(props) => (props.openSearch ? 1 : 0)};
   pointer-events: ${(props) => (props.openSearch ? "auto" : "none")};
   transition: all 0.2s linear;
+  @media screen and (min-width: 1389) {
+      
+  }
   @media screen and (max-width: 1220px) {
     max-width: 555px;
     width: 100%;
@@ -91,6 +94,7 @@ export const NavSearch = styled.div`
     z-index: 99;
   }
 `;
+
 export const NavSearchInput = styled.input`
   height: 100%;
   width: 100%;
