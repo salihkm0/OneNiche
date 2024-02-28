@@ -1,5 +1,4 @@
 import { Box, Rating, Stack, Typography } from '@mui/material'
-import React from 'react'
 import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg, AddtoCart, CardBottmMain, RatingBox, RatingSt, RatingNu } from "../Ui/CardStyle";
 
 export default function Cards({title,imgSrc,star,price}) {

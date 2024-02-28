@@ -59,7 +59,7 @@ export default function Navbar() {
           height={"100%"}
         >
           {openSearch ? (
-            <MainSearchCloseIconContainer openSearch = {openSearch}>
+            <MainSearchCloseIconContainer openSearch = {openSearch} setOpenSearch ={setOpenSearch()}>
             <CloseOutlinedIcon
               onClick={() => setOpenSearch(!openSearch)}
               sx={MainSearchCloseIcon}
