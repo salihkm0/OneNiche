@@ -12,8 +12,7 @@ export default function Home() {
     
     <HomePageSlider/>
       <HomeContainerMain>
-        
-        <FlashSale/>  
+        <FlashSale/> 
          {/* <Cart/> */}
       </HomeContainerMain>
       <Feature/>
