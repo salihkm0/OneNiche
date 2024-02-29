@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import Cards from "./Cards";
+import Cards from "../Common_Componets/Cards";
 import {
   ConDSpacer,
   CountDownBox,

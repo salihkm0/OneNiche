@@ -1,5 +1,5 @@
 import { BrowserRouter as Router , Route ,Routes } from 'react-router-dom';
-import Header from './Components/Header';
+import Header from './Common_Componets/Header';
 import About from './Pages/About';
 import Cart from './Pages/Cart';
 import Checkout from './Pages/Checkout';
@@ -9,7 +9,7 @@ import ProductDetails from './Pages/ProductDetails';
 import Wishlist from './Pages/Wishlist';
 import { StyledContainer } from './Ui/ContainerStyle';
 import NotFoundPage from './Pages/Error404';
-import Footer from './Components/Footer';
+import Footer from './Common_Componets/Footer';
 
 function App() {
   return (
