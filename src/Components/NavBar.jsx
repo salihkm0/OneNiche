@@ -22,7 +22,7 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import { Box, Stack } from "@mui/material";
 
 export default function Navbar() {
-  const [openSearch, setOpenSearch] = useState(false);
+  const [openSearch, setOpenSearch] = useState(true);
   const [mobileNav, setMobileNav] = useState(false);
   return (
     <>
@@ -59,7 +59,7 @@ export default function Navbar() {
           height={"100%"}
         >
           {openSearch ? (
-            <MainSearchCloseIconContainer openSearch = {openSearch} setOpenSearch ={setOpenSearch()}>
+            <MainSearchCloseIconContainer openSearch = {openSearch}>
             <CloseOutlinedIcon
               onClick={() => setOpenSearch(!openSearch)}
               sx={MainSearchCloseIcon}
