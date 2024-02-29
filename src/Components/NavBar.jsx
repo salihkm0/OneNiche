@@ -49,7 +49,7 @@ export default function Navbar() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/">Sign Up</NavLink>
+            <NavLink to="/user/profile">Sign Up</NavLink>
           </li>
         </NavLinks>
         <Stack
