@@ -1,5 +1,5 @@
 import React from "react";
-import { Topbar, TopbarHeader } from "../Ui/NavbarStyle";
+import { Topbar, TopbarHeader } from "../UI/NavbarStyle";
 import Navbar from "./NavBar";
 
 export default function Header() {

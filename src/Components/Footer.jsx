@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import Divider from "@mui/material/Divider";
-import { Grid, InputAdornment } from "@mui/material";
+import { Grid } from "@mui/material";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 
 const mobileBreakpoint = "450px";

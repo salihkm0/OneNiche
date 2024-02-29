@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Cards from "./Cards";
 import {
@@ -9,8 +8,8 @@ import {
   FlashSaleH1,
   HeadFS,
   StyledFlashSale,
-} from "../Ui/FlashSaleStyled";
-import { CardBottmMain, CardMainBox, ViewAll } from "../Ui/CardStyle";
+} from "../UI/FlashSaleStyled";
+import { CardBottmMain, CardMainBox, ViewAll } from "../UI/CardStyle";
 
 
 export default function FlashSale({days,hours,minutes,seconds}) {

@@ -7,7 +7,7 @@ import Contact from './Pages/Contact';
 import Home from "./Pages/Home";
 import ProductDetails from './Pages/ProductDetails';
 import Wishlist from './Pages/Wishlist';
-import { StyledContainer } from './Ui/ContainerStyle';
+import { StyledContainer } from './UI/ContainerStyle';
 import NotFoundPage from './Pages/Error404';
 import Footer from './Components/Footer';
 

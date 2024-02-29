@@ -13,7 +13,7 @@ import {
   SearchCloseIcon,
   SearchIcon,
   SubSearchCloseIconContainer,
-} from "../Ui/NavbarStyle";
+} from "../UI/NavbarStyle";
 import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
