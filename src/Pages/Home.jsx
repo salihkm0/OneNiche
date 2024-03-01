@@ -5,17 +5,18 @@ import Feature from '../Components/Feature'
 import HomePageSlider from '../Components/HomePageSlider'
 import { HomeContainerMain } from '../Ui/HomeStyle'
 import Cart from './Cart'
+import ProductDetails from './ProductDetails'
 export default function Home() {
   return (
     <>
     
     
-    <HomePageSlider/>
+    {/* <HomePageSlider/>
       <HomeContainerMain>
         <FlashSale/> 
-         {/* <Cart/> */}
       </HomeContainerMain>
-      <Feature/>
+      <Feature/> */}
+      <ProductDetails />
     </>
   )
 }

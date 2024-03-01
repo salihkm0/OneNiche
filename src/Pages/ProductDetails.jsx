@@ -6,7 +6,7 @@ import SimilarProductsBox from "../ProductPageComponents/SimilarProductsBox.jsx"
 export default function ProductDetails() {
   return <>
     <FirstBox/>
-    <Feature/>
+    <SimilarProductsBox/>
   </>
   // <div>ProductDetails</div>;
 }
