@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const BestSellingContainer = styled.div`
   /* background: #ccc; */
   width: 100%;
-  height: 518px;
+  height: 100%;
   padding: 10px 0;
   margin-top: 40px;
 `;

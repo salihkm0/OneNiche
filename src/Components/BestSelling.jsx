@@ -67,7 +67,7 @@ export const BestSelling = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    // pauseOnHover: false,
+    pauseOnHover: false,
     // focusOnSelect: true,
     // nextArrow: <SampleNextArrow/>,
     // prevArrow: <SamplePrevArrow/>,
@@ -82,23 +82,6 @@ export const BestSelling = () => {
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>
-            {/* <Cards imgSrc={Img1} title="AirPods Max" star={3.5} price={1499} />
-            <Cards
-              imgSrc={Img2}
-              title="Mechanical Keyboard"
-              subtitle="CEO"
-              star={2}
-              price={999}
-            />
-            <Cards imgSrc={Img3} title="Laptops" star={3} price={5000} />
-            <Cards imgSrc={Img4} title="Watch Ultra" star={4.5} price={1299} />
-            <Cards imgSrc={Img5} title="UHD 4K Tv" star={4.5} price={1000} />
-            <Cards
-              imgSrc={Img6}
-              title="Refrigerators"
-              star={3.5}
-              price={7999}
-            /> */}
             <MainCard/>
             <MainCard/>
             <MainCard/>

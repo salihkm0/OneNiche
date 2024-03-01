@@ -5,8 +5,8 @@ import FlashSale from '../Components/CountDown'
 import Feature from '../Components/Feature'
 import HomePageSlider from '../Components/HomePageSlider'
 import MiniButton from '../Components/MiniButton'
+import { OurProducts } from '../Components/OurProducts'
 import { HomeContainerMain } from '../UI/HomeStyle'
-import Cart from './Cart'
 export default function Home() {
   return (
     <>
@@ -20,6 +20,7 @@ export default function Home() {
          {/* <Cart/> */}
       </HomeContainerMain>
       <BestSelling/>
+      <OurProducts/>
       <Feature/>
       
     </>
