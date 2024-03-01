@@ -18,14 +18,14 @@ export const OurProducts = () => {
           <OurProductsHead>Keep shopping</OurProductsHead>
         </OurProductsHeadContainer>
         <OurProductsCardContainer>
-          <MainCard />
-          <MainCard />
-          <MainCard />
-          <MainCard />
-          <MainCard />
-          <MainCard />
-          <MainCard />
-          <MainCard />
+          <MainCard/>
+          <MainCard/>
+          <MainCard/>
+          <MainCard/>
+          <MainCard/>
+          <MainCard/>
+          <MainCard/>
+          <MainCard/>
         </OurProductsCardContainer>
         <Stack
           direction={"row"}
