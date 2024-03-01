@@ -1,4 +1,3 @@
-import React from "react";
 import { Topbar, TopbarHeader } from "../UI/NavbarStyle";
 import Navbar from "./NavBar";
 

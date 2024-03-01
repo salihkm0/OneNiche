@@ -16,7 +16,7 @@ export default function MiniButton({ text }) {
 
 const StackStyle = {
   alignItems: "center",
-  margin: "70px 0 10px 0",
+  // margin: "70px 0 10px 0",
 };
 
 const BoxStyle = {

@@ -16,3 +16,8 @@ a.secondary{
   color: rgb(255, 255, 255);
 
 }
+.arrow{
+  background-color: #716d6ddf;
+  border : 1px solid red;
+
+}

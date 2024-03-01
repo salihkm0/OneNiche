@@ -1,5 +1,6 @@
 
 // import FlashSale from '../Components/FlashSale'
+import { BestSelling } from '../Components/BestSelling'
 import FlashSale from '../Components/CountDown'
 import Feature from '../Components/Feature'
 import HomePageSlider from '../Components/HomePageSlider'
@@ -18,7 +19,9 @@ export default function Home() {
         <FlashSale/> 
          {/* <Cart/> */}
       </HomeContainerMain>
+      <BestSelling/>
       <Feature/>
+      
     </>
   )
 }
