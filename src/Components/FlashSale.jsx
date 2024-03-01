@@ -1,6 +1,5 @@
-import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import Cards from "./Cards";
+import Cards from "./FlahSaleCards";
 import {
   ConDSpacer,
   CountDownBox,
@@ -9,9 +8,9 @@ import {
   FlashSaleH1,
   HeadFS,
   StyledFlashSale,
-} from "../Ui/FlashSaleStyled";
-import { CardBottmMain, CardMainBox, ViewAll } from "../Ui/CardStyle";
-
+} from "../UI/FlashSaleStyled";
+import { CardButtonContainer, CardMainBox} from "../UI/FlashSaleCardStyle";
+import { StyledButton } from "../UI/ButtonStyle";
 
 export default function FlashSale({days,hours,minutes,seconds}) {
     const Img1 ="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/appleairpodsenginUntitled.jpg"
@@ -123,9 +122,9 @@ export default function FlashSale({days,hours,minutes,seconds}) {
               <Cards imgSrc ={Img6} title= "Refrigerators" star={3.5} price={7999}/> */}
             {/* </Stack>     */}
           </Box>
-          <CardBottmMain>
-              <ViewAll $primary>View All</ViewAll>
-            </CardBottmMain>
+          <CardButtonContainer>
+              <StyledButton $primary>View All</StyledButton>
+            </CardButtonContainer>
         </Stack>
       </Box>
     </>

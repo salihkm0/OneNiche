@@ -1,5 +1,5 @@
 import { Box, Rating, Stack, Typography } from '@mui/material'
-import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg, AddtoCart, CardBottmMain, RatingBox, RatingSt, RatingNu } from "../Ui/CardStyle";
+import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg, AddtoCart, CardBottmMain, RatingBox, RatingSt, RatingNu } from "../UI/FlashSaleCardStyle";
 
 export default function Cards({title,imgSrc,star,price}) {
   return (

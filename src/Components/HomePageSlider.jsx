@@ -1,7 +1,7 @@
 import {Stack, Typography } from "@mui/material";
 import Slider from "react-slick";
 import { cardData } from "../Data/SliderData";
-import { SlideCard, SlideCardImg, SlideCardLink, SlideCardLogo, SlideContainer } from "../Ui/HomeSliderStyle";
+import { SlideCard, SlideCardImg, SlideCardLink, SlideCardLogo, SlideContainer } from "../UI/HomeSliderStyle";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
 
