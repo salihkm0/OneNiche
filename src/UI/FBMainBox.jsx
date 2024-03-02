@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const FBMainBox = styled.div`
     // background-color:#000000;
     border:.5px solid red;
@@ -28,7 +30,6 @@ export const MBLeftMost = styled.div`
 `
 export const BigImg = styled.div`
     border:.5px solid red;
-    background-color:#ffffff;
     height:600px;
     min-width:500px;
     @media (max-width: 600px) {

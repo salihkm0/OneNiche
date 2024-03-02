@@ -13,11 +13,15 @@ import {
 } from "../Ui/FBMainBox";
 import { RatingBox, RatingSt } from "../Ui/CardStyle";
 import { Star } from "@mui/icons-material";
+import { BigImgData } from "../Data/ProductData";
+import { url } from "inspector";
 
 export default function FirstBox() {
   return (
     <FBMainBox>
-      <BigImg>IMG</BigImg>
+        {
+                <BigImg background={url(BigImgData[0].img)} />
+        }
       <SIMainBox>
         <SmallImg style={{ marginTop: "0px" }}>img</SmallImg>
         <SmallImg>img</SmallImg>
