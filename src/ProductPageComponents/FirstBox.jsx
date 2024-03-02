@@ -1,33 +1,51 @@
 import React from "react";
 import { Box, Rating, Stack, Typography } from "@mui/material";
 import Cards from "../Common_Componets/Cards";
-import { BigImg, FBMainBox, MBLeftMost, ProductName, SmallImg } from "../Ui/FBMainBox";
+import {
+  BigImg,
+  Discription,
+  FBMainBox,
+  MBLeftMost,
+  Price,
+  ProductName,
+  SIMainBox,
+  SmallImg,
+} from "../Ui/FBMainBox";
 import { RatingBox, RatingSt } from "../Ui/CardStyle";
 import { Star } from "@mui/icons-material";
 
-
-
-export default function FirstBox(){
-    return(
-        <FBMainBox>
-            <Stack direction={"column"}>
-                <SmallImg style={{marginTop:"0px"}}>img</SmallImg>
-                <SmallImg>img</SmallImg>
-                <SmallImg>img</SmallImg>
-                <SmallImg>img</SmallImg>
+export default function FirstBox() {
+  return (
+    <FBMainBox>
+      <BigImg>IMG</BigImg>
+      <SIMainBox>
+        <SmallImg style={{ marginTop: "0px" }}>img</SmallImg>
+        <SmallImg>img</SmallImg>
+        <SmallImg>img</SmallImg>
+        <SmallImg>img</SmallImg>
+      </SIMainBox>
+      <MBLeftMost>
+        <Stack direction={"column"}>
+          <ProductName>the name</ProductName>
+          <RatingBox>
+            <Stack direction={"row"} spacing={1}>
+              <Rating
+                name="half-rating-read"
+                defaultValue={Star}
+                precision={0.5}
+                sx={RatingSt}
+                readOnly
+              />
             </Stack>
-            <BigImg>IMG</BigImg>
-            <MBLeftMost>
-                <Stack direction={"column"}>
-                    <ProductName>the name</ProductName>
-                    <RatingBox>
-                        <Stack direction={"row"} spacing={1}>
-                            <Rating name="half-rating-read" defaultValue={Star} precision={0.5} sx={RatingSt} readOnly/>
-                        </Stack>
-                    </RatingBox>
-                </Stack>
-            </MBLeftMost>
-        </FBMainBox>
-
-    )
+          </RatingBox>
+          <Price>123</Price>
+          <Discription>
+            PlayStation 5 Controller Skin High quality vinyl with air channel
+            adhesive for easy bubble free install & mess free removal Pressure
+            sensitive.
+          </Discription>
+        </Stack>
+      </MBLeftMost>
+    </FBMainBox>
+  );
 }
