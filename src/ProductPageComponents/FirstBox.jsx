@@ -69,15 +69,15 @@ export default function FirstBox() {
             <Delivery>
               <Logo />
               <Stack direction={"column"}>
-                <Option></Option>
-                <OpDiscription></OpDiscription>
+                <Option>Free Delivery</Option>
+                <OpDiscription>Enter your postal code for Delivery Availability</OpDiscription>
               </Stack>
             </Delivery>
             <Delivery>
               <Logo />
               <Stack direction={"column"}>
-                <Option></Option>
-                <OpDiscription></OpDiscription>
+                <Option>Return Delivery</Option>
+                <OpDiscription>Free 30 Days Delivery Returns. Details</OpDiscription>
               </Stack>
             </Delivery>
           </Stack>  
