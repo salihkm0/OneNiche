@@ -78,7 +78,7 @@ export const NavSearch = styled.div`
   pointer-events: ${(props) => (props.openSearch ? "auto" : "none")};
   transition: all 0.2s linear;
   @media screen and (min-width: 1389) {
-      
+    
   }
   @media screen and (max-width: 1220px) {
     max-width: 555px;

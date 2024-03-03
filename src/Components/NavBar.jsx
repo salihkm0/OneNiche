@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   MainSearchCloseIcon,
@@ -21,27 +21,40 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { Stack } from "@mui/material";
 
+import { useRef } from "react";
+
 export default function Navbar() {
-  const [openSearch, setOpenSearch] = useState(false)
-  const [mobileNav, setMobileNav] = useState(false)
+  const [openSearch, setOpenSearch] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
+
+  const searchRef = useRef()
+
+  useEffect(() => {
+    const mobileNavHandler = (e) => {
+      setMobileNav(false);
+    }
+    const openSearchHandler = (e) => {
+      if(!searchRef.current.contains(e.target)){
+        setOpenSearch(false);
+      }
+    }
+    document.addEventListener("mousedown", mobileNavHandler)
+    document.addEventListener("mousedown", openSearchHandler)
+  })
 
   return (
     <>
       <Nav>
         <MobileNavOpen>
-          {mobileNav ? (
-            <></>
-          ) : (
-            <DehazeOutlinedIcon onClick={() => setMobileNav(!mobileNav)} />
-          )}
+          <DehazeOutlinedIcon onClick={() => setMobileNav(!mobileNav)} />
         </MobileNavOpen>
         <NavLogo>
           <NavLink to="/">OneNiche</NavLink>
         </NavLogo>
         <NavLinks openSearch={openSearch} mobileNav={mobileNav}>
-          <MobileNavClose>
+          {/* <MobileNavClose>
             <CloseOutlinedIcon onClick={() => setMobileNav(!mobileNav)} />
-          </MobileNavClose>
+          </MobileNavClose> */}
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -62,7 +75,9 @@ export default function Navbar() {
           height={"100%"}
         >
           {openSearch ? (
-            <MainSearchCloseIconContainer openSearch={openSearch}>
+            <MainSearchCloseIconContainer
+              openSearch={openSearch}
+            >
               <CloseOutlinedIcon
                 onClick={() => setOpenSearch(!openSearch)}
                 sx={MainSearchCloseIcon}
@@ -81,7 +96,7 @@ export default function Navbar() {
               />
             </div>
           )}
-          <NavSearch openSearch={openSearch}>
+          <NavSearch openSearch={openSearch} ref = {searchRef}>
             <SearchOutlinedIcon sx={SearchIcon} />
             <NavSearchInput type="text" placeholder="Search here..." />
             <SubSearchCloseIconContainer openSearch={openSearch}>
