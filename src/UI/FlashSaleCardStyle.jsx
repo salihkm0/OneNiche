@@ -39,7 +39,6 @@ export const CardInsideBox = {
     // width: "230px",
   boxShadow:` rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
               rgba(14, 30, 37, 0.32) 0px 2px 16px 0px`,
-
   height: "100%",
   marginLeft: "10px",
   marginRight: "10px",
@@ -164,37 +163,7 @@ export const CardOGPrice = styled.p`
 //     height: 36px;
 //   }
 // `;
-export const CardBottmMain = styled.div`
-  /* background-color:#0c0c0ccd;  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  width: 100%px;
-  /* margin-left:20px; */
-`;
-export const ViewAll = styled.button`
-  background-color:#ff7300; 
-  color: #010101;
-  border: none;
-  height: 50px;
-  width:120px;
-  font-size: 12px;
-  margin-top:7px;
-  border-radius: 5px;
-  @media (max-width:600px) {
-    height: 40px;
-    width:80px;
-    margin-bottom:10px;
-  }
-  &:hover {
-    background-color: #ff7300d7;
-    color: #010101;
-    font-size: 13px;
-  }
-  
 
-`;
 export const RatingBox = styled.div`
   font-size: 10px;
   display: flex;
@@ -204,3 +173,12 @@ export const RatingBox = styled.div`
 export const RatingSt = {
     fontSize:" 10px",
 }
+export const CardButtonContainer = styled.div`
+  /* background-color:#0c0c0ccd;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* margin-left:20px; */
+`;
