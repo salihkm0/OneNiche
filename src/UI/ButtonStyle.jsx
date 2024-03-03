@@ -2,8 +2,9 @@ import { styled } from "styled-components";
 
 
 export const StyledButton = styled.button`
-  background-color:#ff7300; 
-  color: #010101;
+  /* background-color:#ff7300;  */
+  background-color:${props => props.$primary ? "#ff7300" : "#00ff66"}; 
+  color: #fff;
   border: none;
   height: 50px;
   width:120px;

@@ -31,7 +31,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </StyledContainer>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );

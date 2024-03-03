@@ -20,7 +20,7 @@ export const CardImg = styled.img`
 export const CardBody = styled.div`
   /* background: #ebebebd7; */
   padding: 5px 0;
-  height: 100%;
+  height: auto;
 `;
 export const CardTitle = styled.h2`
   font-size: 15px;
@@ -52,8 +52,8 @@ export const FavoriteIconContainer = styled.div`
     right : 10px ;
     top : 10px;
     cursor: pointer;
-    height :30px;
-    width : 30px;
+    height :50px;
+    width : 50px;
     border-radius : 50%;
     background: #fff;
     display : grid;

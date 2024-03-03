@@ -32,7 +32,7 @@ export const OurProducts = () => {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <StyledButton>View All</StyledButton>
+          <StyledButton $primary>View All</StyledButton>
         </Stack>
       </OurProductsContainer>
     </>
