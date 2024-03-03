@@ -13,13 +13,14 @@ import {
   SearchCloseIcon,
   SearchIcon,
   SubSearchCloseIconContainer,
-} from "../Ui/NavbarStyle";
+} from "../UI/NavbarStyle";
 import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { Stack } from "@mui/material";
+
 import { useRef } from "react";
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
     document.addEventListener("mousedown", mobileNavHandler)
     document.addEventListener("mousedown", openSearchHandler)
   })
-  
+
   return (
     <>
       <Nav>
@@ -64,7 +65,7 @@ export default function Navbar() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/">Sign Up</NavLink>
+            <NavLink to="/user/profile">Sign Up</NavLink>
           </li>
         </NavLinks>
         <Stack
