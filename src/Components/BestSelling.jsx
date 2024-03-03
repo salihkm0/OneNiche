@@ -67,10 +67,38 @@ export const BestSelling = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    pauseOnHover: false,
+    // pauseOnHover: false,
     // focusOnSelect: true,
     // nextArrow: <SampleNextArrow/>,
     // prevArrow: <SamplePrevArrow/>,
+
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+          }
+        }
+      ]
   };
   return (
     <>
@@ -78,7 +106,7 @@ export const BestSelling = () => {
         <MiniButton text={"This Month"} />
         <BestSellingHeadContainer>
           <BestSellingHead>Best Selling Products</BestSellingHead>
-          <StyledButton>View All</StyledButton>
+          <StyledButton $primary>View All</StyledButton>
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>
