@@ -36,22 +36,22 @@ export default function FirstBox() {
       <MBLeftMost>
         <Stack direction={"column"}>
           <ProductName>the name</ProductName>
-            <Stack direction={"row"} spacing={1}>
-              <Rating
+          <Stack direction={"row"} spacing={1}>
+            <Rating
                 name="half-rating-read"
                 defaultValue={Star}
                 precision={0.5}
                 sx={PRatingSt}
                 readOnly
-              />
-            </Stack>
+            />
+          </Stack>
           <Price>123</Price>
           <Discription>
             PlayStation 5 Controller Skin High quality vinyl with air channel
             adhesive for easy bubble free install & mess free removal Pressure
             sensitive.
           </Discription>
-          <Stack direction={"row"} sx={{justifyContent:"space-between",
+          <Stack direction={"row"} sx={{justifyContent:"space-evenly",
                                         '@media (max-width:600px)': {
                                           padding:"5px",
                                           paddingBottom:"0px",
@@ -62,6 +62,12 @@ export default function FirstBox() {
             <Buttons>Add to Cart</Buttons>
           </Stack>
           <Stack direction={"column"} sx={{marginTop:"130px",
+                                        '@media (max-width: 1380px)':{
+                                          marginTop:"60px"
+                                        },
+                                        '@media (max-width:775px)': {
+                                          marginTop:"50px",
+                                        },
                                         '@media (max-width:600px)': {
                                           marginTop:"10px",
                                         }
@@ -75,7 +81,7 @@ export default function FirstBox() {
             </Delivery>
             <Delivery>
               <Logo />
-              <Stack direction={"column"}>
+              <Stack direction={"column"} >
                 <Option>Return Delivery</Option>
                 <OpDiscription>Free 30 Days Delivery Returns. Details</OpDiscription>
               </Stack>
