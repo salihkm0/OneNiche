@@ -8,5 +8,4 @@ export default function ProductDetails() {
     <FirstBox/>
     <SimilarProductsBox/>
   </>
-  // <div>ProductDetails</div>;
 }
