@@ -5,7 +5,6 @@ import Cart from "./Pages/Cart";
 import Checkout from "./Pages/Checkout";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
-<<<<<<< Updated upstream
 import ProductDetails from "./Pages/ProductDetails";
 import Wishlist from "./Pages/Wishlist";
 import { StyledContainer } from "./UI/ContainerStyle";
@@ -13,19 +12,13 @@ import NotFoundPage from "./Pages/Error404";
 import Footer from "./Components/Footer";
 import { UserProfile } from "./Pages/UserProfile";
 import ProductList from "./Pages/ProductList";
-=======
-import ProductDetails from './Pages/ProductDetails';
-import Wishlist from './Pages/Wishlist';
-import { StyledContainer } from './Ui/ContainerStyle';
-import NotFoundPage from './Pages/Error404';
-import Footer from './Components/Footer';
-import ProductList from './Pages/ProductList';
->>>>>>> Stashed changes
+
+
 
 function App() {
   return (
     <>
-<<<<<<< Updated upstream
+
       <Router>
         <Header />
         <StyledContainer>
@@ -41,25 +34,10 @@ function App() {
             <Route path="/user/profile" element={<UserProfile />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<NotFoundPage />} />
-=======
-    <Router>
-      <Header/>
-      <StyledContainer>
-       <Routes>
-         <Route path="/" element={<Home/>} />
-         <Route path="/about" element={<About/>} />
-         <Route path="/contact" element={<Contact/>} />
-         <Route path="/wishlist" element={<Wishlist/>} />
-         <Route path="/cart" element={<Cart/>} />
-         <Route path="/product/:id" element={<ProductDetails />} /> 
-         <Route path="/products/:catagory" element={<ProductList />} />
-         <Route path="/cart" element={<Cart />} />
-         <Route path="/checkout" element={<Checkout />} />
-            <Route path="*" element={< NotFoundPage />} />
->>>>>>> Stashed changes
+
           </Routes>
         </StyledContainer>
-        {/* <Footer /> */}
+
       </Router>
     </>
   );

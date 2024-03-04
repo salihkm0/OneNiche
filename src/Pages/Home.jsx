@@ -14,23 +14,19 @@ export default function Home() {
     
     
     <HomePageSlider/>
-<<<<<<< Updated upstream
+
     <MiniButton text = "Today's"/>
-=======
->>>>>>> Stashed changes
+
       <HomeContainerMain>
         
         <FlashSale/> 
       </HomeContainerMain>
-<<<<<<< Updated upstream
+
       <BestSelling/>
       <LimtedTime/>
       <OurProducts/>
       <Feature/>
       
-=======
-      <Feature/>
->>>>>>> Stashed changes
     </>
   )
 }

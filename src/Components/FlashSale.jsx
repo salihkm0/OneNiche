@@ -115,10 +115,8 @@ export default function FlashSale({days,hours,minutes,seconds}) {
 
           <Box sx={CardMainBox} justifyContent={"space-around"}>
             <Stack direction={"row"}>
-            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
-            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
-            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
-            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            <CardImg src={Img1}  />
+
               {/* <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} price={1499}/>
               <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO" star={2} price={1000} />
               <Cards imgSrc ={Img3} title= "Laptops" star={3} price={5000}/>
