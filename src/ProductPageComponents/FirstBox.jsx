@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Rating, Stack, Typography } from "@mui/material";
-import Cards from "../Components/Cards";
+// import Cards from "../Components/Cards";
 
 import {
   BigImg,
@@ -18,8 +18,8 @@ import {
   ProductName,
   SIMainBox,
   SmallImg,
-} from "../Ui/FBMainBox";
-import { RatingBox, RatingSt } from "../Ui/CardStyle";
+} from "../UI/FBMainBox";
+// import { RatingBox, RatingSt } from "../UI/CardStyle";
 import { Star } from "@mui/icons-material";
 import { BigImgData } from "../Data/ProductData";
 

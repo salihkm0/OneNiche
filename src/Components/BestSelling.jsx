@@ -6,7 +6,7 @@ import {
   BestSellingHeadContainer,
 } from "../UI/BestSellingStyle";
 import { StyledButton } from "../UI/ButtonStyle";
-import Cards from "./FlahSaleCards";
+// import Cards from "./FlahSaleCards";
 import { MainCard } from "./MainCard";
 import MiniButton from "./MiniButton";
 
@@ -100,13 +100,15 @@ export const BestSelling = () => {
         }
       ]
   };
+  const catagory ="all"
   return (
     <>
       <BestSellingContainer>
         <MiniButton text={"This Month"} />
         <BestSellingHeadContainer>
           <BestSellingHead>Best Selling Products</BestSellingHead>
-          <StyledButton $primary>View All</StyledButton>
+          
+          <StyledButton to={`/products/${catagory}`} $primary>View All</StyledButton>
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>

@@ -1,5 +1,6 @@
 import { Box, Rating, Stack, Typography } from '@mui/material'
 import { BuyNow, CardImgCont, CardInsideBox, CardOFPrice, CardOGPrice, CardTitle, ProductImg, AddtoCart, CardBottmMain, RatingBox, RatingSt, RatingNu } from "../UI/FlashSaleCardStyle";
+import { MainCard } from './MainCard';
 
 export default function Cards({title,imgSrc,star,price}) {
   return (
@@ -7,6 +8,7 @@ export default function Cards({title,imgSrc,star,price}) {
       <Box sx={CardInsideBox}>
         <CardImgCont>
           <ProductImg src={imgSrc} />
+
         </CardImgCont>
           <CardTitle>{title}</CardTitle>
 

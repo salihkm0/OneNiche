@@ -11,6 +11,7 @@ import { StyledContainer } from "./UI/ContainerStyle";
 import NotFoundPage from "./Pages/Error404";
 import Footer from "./Components/Footer";
 import { UserProfile } from "./Pages/UserProfile";
+import ProductList from "./Pages/ProductList";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/products/:catagory" element={<ProductList />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/user/profile" element={<UserProfile />} />
             <Route path="/checkout" element={<Checkout />} />

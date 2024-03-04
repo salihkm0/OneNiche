@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 
-export const StyledButton = styled.button`
+export const StyledButton = styled(Link)`
   /* background-color:#ff7300;  */
   background-color:${props => props.$primary ? "#ff7300" : "#00ff66"}; 
+  display:grid;
+  place-items: center;
   color: #fff;
   border: none;
   height: 50px;
@@ -21,6 +24,4 @@ export const StyledButton = styled.button`
     color: #010101;
     font-size: 13px;
   }
-  
-
 `;

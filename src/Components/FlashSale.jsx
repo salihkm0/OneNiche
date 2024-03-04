@@ -11,6 +11,7 @@ import {
 } from "../UI/FlashSaleStyled";
 import { CardButtonContainer, CardMainBox} from "../UI/FlashSaleCardStyle";
 import { StyledButton } from "../UI/ButtonStyle";
+import { CardImg, CardImgContainer } from "../UI/MainCardStyle";
 
 export default function FlashSale({days,hours,minutes,seconds}) {
     const Img1 ="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/appleairpodsenginUntitled.jpg"
@@ -113,15 +114,20 @@ export default function FlashSale({days,hours,minutes,seconds}) {
           </Box>
 
           <Box sx={CardMainBox} justifyContent={"space-around"}>
-            {/* <Stack direction={"row"}> */}
-              <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} price={1499}/>
+            <Stack direction={"row"}>
+            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+              {/* <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} price={1499}/>
               <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO" star={2} price={1000} />
               <Cards imgSrc ={Img3} title= "Laptops" star={3} price={5000}/>
-              <Cards imgSrc ={Img4} title= "Watch Ultra" star={4.5} price={1299}/>
-              {/* <Cards imgSrc ={Img5} title= "UHD 4K Tv" star={4.5} price={1000}/>
-              <Cards imgSrc ={Img6} title= "Refrigerators" star={3.5} price={7999}/> */}
-            {/* </Stack>     */}
+              <Cards imgSrc ={Img4} title= "Watch Ultra" star={4.5} price={1299}/> */}
+            </Stack>    
           </Box>
+
+
+
           <CardButtonContainer>
               <StyledButton $primary>View All</StyledButton>
             </CardButtonContainer>

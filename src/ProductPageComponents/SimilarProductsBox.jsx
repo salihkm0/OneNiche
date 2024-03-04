@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import {Cards} from "../Components/Cards";
-import { MHStart, MainHead } from "../Ui/SPMainBox";
-import { ProductName } from "../Ui/FBMainBox";
+// import {Cards} from "../Components/Cards";
+import { MHStart, MainHead } from "../UI/SPMainBox";
+import { ProductName } from "../UI/FBMainBox";
 
 
 export default function SimilarProductsBox(){

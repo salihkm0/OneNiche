@@ -1,7 +1,7 @@
 import React from 'react'
-import { LFHBoXH1, LFInsideBoxs, LeftFilterBox, ProductCardsBox, ProductContainer } from '../Ui/ProductListStyle'
+import { LFHBoXH1, LFInsideBoxs, LeftFilterBox, ProductCardsBox, ProductContainer } from '../UI/ProductListStyle'
 
-export default function () {
+export default function ProductList () {
   return (
     <>
         <ProductContainer>
