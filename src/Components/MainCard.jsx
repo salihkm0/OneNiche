@@ -9,28 +9,39 @@ import {
   CardRatingStar,
   CardTitle,
   FavoriteIconContainer,
+  NewTimeTag,
   StyledCard,
 } from "../UI/MainCardStyle";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export const MainCard = () => {
+export const MainCard = ({ id, isNew }) => {
   const [favorite, setFavorite] = useState(false);
   return (
     <StyledCard>
       <FavoriteIconContainer>
         {favorite ? (
-          <FavoriteIcon onClick={() => setFavorite(!favorite)} sx = {{color : 'red'}}/>
+          <FavoriteIcon
+            onClick={() => setFavorite(!favorite)}
+            sx={{ color: "red" }}
+          />
         ) : (
           <FavoriteBorderIcon onClick={() => setFavorite(!favorite)} />
         )}
       </FavoriteIconContainer>
-      <CardImgContainer>
-        <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
-      </CardImgContainer>
+      {isNew ? <NewTimeTag>New</NewTimeTag> : <></>}
+
+      <Link to={`/product/${id}`}>
+        <CardImgContainer>
+          <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+        </CardImgContainer>
+      </Link>
       <CardBody>
-        <CardTitle>RK ROYAL KLUDGE RK61 Mechanical Keyboard</CardTitle>
+        <Link to={`product/${id}`}>
+          <CardTitle>RK ROYAL KLUDGE RK61 Mechanical Keyboard</CardTitle>
+        </Link>
         <Stack
           direction={"row"}
           spacing={2}

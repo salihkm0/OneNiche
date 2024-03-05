@@ -110,10 +110,10 @@ export const BestSelling = () => {
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>
-            <MainCard/>
-            <MainCard/>
-            <MainCard/>
-            <MainCard/>
+            <MainCard id = {"1"} isNew = {true}/>
+            <MainCard id = {"2"} isNew = {false}/>
+            <MainCard id = {"3"} isNew = {false}/>
+            <MainCard id = {"4"} isNew = {true}/>
           </Slider>
           
         </BestSellingCardContainer>
