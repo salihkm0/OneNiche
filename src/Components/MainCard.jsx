@@ -33,7 +33,7 @@ export const MainCard = ({ id, isNew }) => {
       </FavoriteIconContainer>
       {isNew ? <NewTimeTag>New</NewTimeTag> : <></>}
 
-      <Link to={`product/${id}`}>
+      <Link to={`/product/${id}`}>
         <CardImgContainer>
           <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
         </CardImgContainer>
