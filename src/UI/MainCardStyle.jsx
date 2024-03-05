@@ -50,12 +50,24 @@ export const CardRatingCount = {
 export const FavoriteIconContainer = styled.div`
     position : absolute;
     right : 10px ;
-    top : 10px;
-    cursor: pointer;
-    height :50px;
-    width : 50px;
+    top : 5px;
+    height :30px;
+    width : 30px;
     border-radius : 50%;
     background: #fff;
+    display : grid;
+    place-items : center;
+`
+export const NewTimeTag = styled.p`
+    position : absolute;
+    left : 10px ;
+    top : 10px;
+    height :20px;
+    width : 40px;
+    font-size :12px;
+    border-radius : 2px;
+    background: #48ff00;
+    color : #fff;
     display : grid;
     place-items : center;
 `

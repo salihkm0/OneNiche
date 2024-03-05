@@ -9,6 +9,7 @@ import {
   CardRatingStar,
   CardTitle,
   FavoriteIconContainer,
+  NewTimeTag,
   StyledCard,
 } from "../UI/MainCardStyle";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -26,6 +27,9 @@ export const MainCard = () => {
           <FavoriteBorderIcon onClick={() => setFavorite(!favorite)} />
         )}
       </FavoriteIconContainer>
+      <NewTimeTag>
+        New
+      </NewTimeTag>
       <CardImgContainer>
         <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
       </CardImgContainer>
