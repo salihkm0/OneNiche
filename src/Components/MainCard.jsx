@@ -17,7 +17,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export const MainCard = ({ id, isNew }) => {
+export const MainCard = ({ id, isNew, imgSrc }) => {
   const [favorite, setFavorite] = useState(false);
   return (
     <StyledCard>
@@ -35,7 +35,11 @@ export const MainCard = ({ id, isNew }) => {
 
       <Link to={`/product/${id}`}>
         <CardImgContainer>
-          <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+          {imgSrc ? (
+            <CardImg src={imgSrc} />
+          ) : (
+            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+          )}
         </CardImgContainer>
       </Link>
       <CardBody>

@@ -21,5 +21,5 @@ export const BestSellingCardContainer = styled.div`
   /* background: #552828; */
   width: 100%;
   height: 380px;
-  padding: 30px 20px;
+  padding: 30px 0px;
 `;

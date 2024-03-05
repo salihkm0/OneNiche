@@ -6,39 +6,8 @@ import {
   BestSellingHeadContainer,
 } from "../UI/BestSellingStyle";
 import { StyledButton } from "../UI/ButtonStyle";
-import Cards from "./FlahSaleCards";
 import { MainCard } from "./MainCard";
 import MiniButton from "./MiniButton";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "flex",
-        background: "green",
-        padding: "15px",
-        borderRadius: "50%",
-        textAlign: "center",
-        justifyContent: "center",
-      }}
-      onClick={onClick}
-    />
-  );
-}
 
 export const BestSelling = () => {
   const Img1 =
@@ -110,10 +79,10 @@ export const BestSelling = () => {
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>
-            <MainCard id = {"1"} isNew = {true}/>
-            <MainCard id = {"2"} isNew = {false}/>
-            <MainCard id = {"3"} isNew = {false}/>
-            <MainCard id = {"4"} isNew = {true}/>
+            <MainCard id = {"1"} isNew = {true}  imgSrc = {Img1}/>
+            <MainCard id = {"2"} isNew = {false} imgSrc = {Img2} />
+            <MainCard id = {"3"} isNew = {false} imgSrc = {Img3} />
+            <MainCard id = {"4"} isNew = {true}  imgSrc = {Img4}/>
           </Slider>
           
         </BestSellingCardContainer>

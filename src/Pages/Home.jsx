@@ -1,7 +1,7 @@
 
-// import FlashSale from '../Components/FlashSale'
+// import {FlashSale} from '../Components/FlashSale'
 import { BestSelling } from '../Components/BestSelling'
-import FlashSale from '../Components/CountDown'
+// import FlashSale from '../Components/CountDown'
 import Feature from '../Components/Feature'
 import HomePageSlider from '../Components/HomePageSlider'
 import { LimtedTime } from '../Components/LimtedTime'
@@ -14,10 +14,9 @@ export default function Home() {
     
     
     <HomePageSlider/>
-    <MiniButton text = "Today's"/>
       <HomeContainerMain>
         
-        <FlashSale/> 
+        {/* <FlashSale/>  */}
          {/* <Cart/> */}
       </HomeContainerMain>
       <BestSelling/>

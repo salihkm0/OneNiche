@@ -4,7 +4,7 @@ export const StyledCard = styled.div`
   height: 350px;
   width: 270px;
   margin: 10px 0;
-  position : relative ;
+  position: relative;
 `;
 export const CardImgContainer = styled.div`
   background: #f1f1f196;
@@ -21,6 +21,14 @@ export const CardBody = styled.div`
   /* background: #ebebebd7; */
   padding: 5px 0;
   height: auto;
+`;
+export const LimitedTitle = styled.p`
+  font-size: 12px;
+  font-weight: 400;
+  padding : 2px 4px; 
+  color: #fff;
+  border-radius: 2px;
+  background: #ff0000;
 `;
 export const CardTitle = styled.h2`
   font-size: 15px;
@@ -48,26 +56,26 @@ export const CardRatingCount = {
   color: "#5a5a5ae5",
 };
 export const FavoriteIconContainer = styled.div`
-    position : absolute;
-    right : 10px ;
-    top : 5px;
-    height :30px;
-    width : 30px;
-    border-radius : 50%;
-    background: #fff;
-    display : grid;
-    place-items : center;
-`
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+`;
 export const NewTimeTag = styled.p`
-    position : absolute;
-    left : 10px ;
-    top : 10px;
-    height :20px;
-    width : 40px;
-    font-size :12px;
-    border-radius : 2px;
-    background: #48ff00;
-    color : #fff;
-    display : grid;
-    place-items : center;
-`
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 20px;
+  width: 40px;
+  font-size: 12px;
+  border-radius: 2px;
+  background: #48ff00;
+  color: #fff;
+  display: grid;
+  place-items: center;
+`;
