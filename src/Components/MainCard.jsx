@@ -9,6 +9,8 @@ import {
   CardRatingStar,
   CardTitle,
   FavoriteIconContainer,
+  LimitedOff,
+  LimitedTitle,
   NewTimeTag,
   StyledCard,
 } from "../UI/MainCardStyle";
@@ -17,7 +19,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export const MainCard = ({ id, isNew }) => {
+export const MainCard = ({ id, isNew, imgSrc, inFlashSale,flashSaleOff }) => {
   const [favorite, setFavorite] = useState(false);
   return (
     <StyledCard>
@@ -35,10 +37,28 @@ export const MainCard = ({ id, isNew }) => {
 
       <Link to={`/product/${id}`}>
         <CardImgContainer>
-          <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+          {imgSrc ? (
+            <CardImg src={imgSrc} />
+          ) : (
+            <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+          )}
         </CardImgContainer>
       </Link>
       <CardBody>
+        {inFlashSale ? (
+          <Stack
+            direction={"row"}
+            alignItems="center"
+            spacing={1}
+            margin={"3px 0 8px 0"}
+          >
+            <LimitedOff>{flashSaleOff}%</LimitedOff>
+            <LimitedTitle>Limited Time</LimitedTitle>
+          </Stack>
+        ) : (
+          <></>
+        )}
+
         <Link to={`product/${id}`}>
           <CardTitle>RK ROYAL KLUDGE RK61 Mechanical Keyboard</CardTitle>
         </Link>

@@ -1,7 +1,7 @@
 import {Stack, Typography } from "@mui/material";
 import Slider from "react-slick";
 import { cardData } from "../Data/SliderData";
-import { CardName, CardTitle, SlideCard, SlideCardImg, SlideCardLink, SlideCardLogo, SlideContainer, SliderMainStack } from "../Ui/HomeSliderStyle";
+import { CardName, CardTitle, SlideCard, SlideCardImg, SlideCardLink, SlideCardLogo, SlideContainer, SliderMainStack } from "../UI/HomeSliderStyle";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
 export default function HomePageSlider() {

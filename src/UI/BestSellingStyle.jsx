@@ -3,9 +3,9 @@ import { styled } from "styled-components";
 export const BestSellingContainer = styled.div`
   /* background: #ccc; */
   width: 100%;
-  height: 518px;
+  height: auto;
   padding: 10px 0;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 `;
 export const BestSellingHeadContainer = styled.div`
   display: flex;
@@ -21,5 +21,5 @@ export const BestSellingCardContainer = styled.div`
   /* background: #552828; */
   width: 100%;
   height: 380px;
-  padding: 30px 20px;
+  padding: 30px 0px;
 `;
