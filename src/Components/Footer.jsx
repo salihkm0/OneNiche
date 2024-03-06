@@ -122,7 +122,7 @@ const StyledFooter = styled.div`
   height: 37vh;
 
   @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    height: 53vh;
+    height: 45vh;
   }
   @media (max-width: ${mobileBreakpoint}) {
     height: 45vh;
@@ -152,9 +152,9 @@ const FirstHeading = styled.ul`
     font-size: 1.5vh;
     margin-left: 3vh;
   }
-  @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    font-size: 2.3vh;
-  }
+@media(min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}){
+  font-size: 1.8vh;
+}
 `;
 
 const SubHeading = styled.li`
@@ -169,7 +169,7 @@ const SubHeading = styled.li`
     margin-left: 3vh;
   }
   @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    font-size: 1.7vh;
+    font-size: 1.3vh;
   }
 `;
 
@@ -188,17 +188,17 @@ const CopyRight = styled.p`
 
 const EmailInput = styled.input`
   background-color: transparent;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  color: white;
-  font-size: 2.2vh;
-  @media (max-width: ${mobileBreakpoint}) {
-    font-size: 1.7vh;
-  }
-  @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    font-size: 2vh;
+width:100%;
+height:100%;
+border:none;
+outline: none;
+color: white;
+font-size:2.2vh;
+@media (max-width:${mobileBreakpoint}) {
+  font-size:1.3vh;
+}
+    @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
+    font-size:1.7vh;
   }
 `;
 const EmailInputContainer = styled.div`
@@ -211,20 +211,18 @@ const EmailInputContainer = styled.div`
   margin-top: 2vh;
   margin-left: 10vh;
   border-radius: 3px;
-  padding: 0 5px;
-  @media (max-width: ${mobileBreakpoint}) {
-    height: 3.5vh;
-    width: 20vh;
-    margin-top: 2vh;
-    margin-left: 2.4vh;
-    border-radius: 3px;
-  }
-
-  @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    height: 3.5vh;
-    width: 20vh;
-    margin-top: 1vh;
-    margin-left: 9.5vh;
-    border-radius: 3px;
+  padding:0 5px ;
+  @media (max-width:${mobileBreakpoint}) {
+    height: 3vh;
+  width: 16vh;
+  margin-top: 2vh;
+  margin-left: 2.4vh;
+  border-radius: 3px;}
+    @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
+    height: 2.6vh;
+  width: 17vh;
+  margin-top: 1vh;
+  margin-left: 9.5vh;
+  border-radius: 3px;
   }
 `;
