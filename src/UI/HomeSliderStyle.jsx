@@ -6,6 +6,7 @@ export const SlideContainer = styled.div`
   width: 100%;
   margin: 20px 0;
   overflow: hidden;
+
   position: relative;
   @media screen and (max-width: 1054px) {
     height: 250px;
@@ -17,16 +18,17 @@ export const SlideContainer = styled.div`
     height: 190px;
   }
   @media screen and (max-width: 627px) {
-    display: none;
+    
   }
   @media screen and (max-width: 600px) {
-    height: 200px;
+    padding : 20px 0;
   }
 `;
 
 export const SlideCard = styled.div`
   width: 100%;
   height: 100%;
+  
 `;
 export const SlideCardLogo = styled.img`
   width: 60px;
@@ -85,10 +87,14 @@ export const SlideCardLink = styled.a`
     width: 65px;
   }
 `;
+export const SlideCardImgContainer = styled.div`
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`;
 export const SlideCardImg = styled.img`
   width: 350px;
   height: 300px;
-  display: none;
   @media screen and (max-width: 1054px) {
     width: 280px;
     height: 240px;

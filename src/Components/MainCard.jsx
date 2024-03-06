@@ -18,6 +18,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FavIconFilledStyle, FavIconStyle } from "../UI/FavIconStyle";
 
 export const MainCard = ({ id, isNew, imgSrc, inFlashSale, flashSaleOff }) => {
   const [favorite, setFavorite] = useState(false);
@@ -27,12 +28,13 @@ export const MainCard = ({ id, isNew, imgSrc, inFlashSale, flashSaleOff }) => {
         {favorite ? (
           <FavoriteIcon
             onClick={() => setFavorite(!favorite)}
-            sx={{ color: "red" }}
+            sx={FavIconFilledStyle}
             // fontSize={"15px"}
           />
         ) : (
           <FavoriteBorderIcon
             onClick={() => setFavorite(!favorite)}
+            sx={FavIconStyle}
             // fontSize={"15px"}  
           />
         )}
