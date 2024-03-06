@@ -1,5 +1,5 @@
 import React from 'react'
-import { CarTContainer } from '../Ui/Cartstyle'
+import { CarTContainer } from '../UI/Cartstyle'
 
 
 export default function Cart() {

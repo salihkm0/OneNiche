@@ -1,5 +1,4 @@
 import { Box, Grid, List, Stack } from "@mui/material";
-import React from "react";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 import BeenhereOutlinedIcon from "@mui/icons-material/BeenhereOutlined";
