@@ -19,7 +19,8 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { Box, Stack } from "@mui/material";
+import {  Stack } from "@mui/material";
+
 
 export default function Navbar() {
   const [openSearch, setOpenSearch] = useState(false);
@@ -49,7 +50,7 @@ export default function Navbar() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/">Sign Up</NavLink>
+            <NavLink to="/Signup">Sign Up</NavLink>
           </li>
         </NavLinks>
         <Stack

@@ -30,7 +30,7 @@ export default function Footer() {
 
             <EmailInputContainer>
               
-              <EmailInput placeholder=" Enter your email " type="text" />
+              <EmailInput placeholder="Enter your email " type="text" />
               <SendOutlinedIcon sx={{ fontSize:{
                 lg: 'large',xs:'small',sm:'medium'
               }}} />
@@ -79,7 +79,7 @@ const StyledFooter = styled.div`
   height: 37vh;
 
   @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    height: 53vh;
+    height: 45vh;
   }
   @media (max-width: ${mobileBreakpoint}) {
     height: 45vh;
@@ -110,7 +110,7 @@ const FirstHeading = styled.ul`
     margin-left: 3vh;
   }
 @media(min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}){
-  font-size: 2.3vh;
+  font-size: 1.8vh;
 }
 `;
 
@@ -126,7 +126,7 @@ const SubHeading = styled.li`
     margin-left: 3vh;
   }
   @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    font-size: 1.7vh;
+    font-size: 1.3vh;
   }
 `;
 
@@ -153,10 +153,10 @@ outline: none;
 color: white;
 font-size:2.2vh;
 @media (max-width:${mobileBreakpoint}) {
-  font-size:1.7vh;
+  font-size:1.3vh;
 }
     @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    font-size:2vh;
+    font-size:1.7vh;
 
   }
   
@@ -173,18 +173,19 @@ border:1px solid white;
   border-radius: 3px;
   padding:0 5px ;
   @media (max-width:${mobileBreakpoint}) {
-    height: 3.5vh;
-  width: 20vh;
+    height: 3vh;
+  width: 16vh;
   margin-top: 2vh;
   margin-left: 2.4vh;
   border-radius: 3px;}
 
     @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    height: 3.5vh;
-  width: 20vh;
+    height: 2.6vh;
+  width: 17vh;
   margin-top: 1vh;
   margin-left: 9.5vh;
   border-radius: 3px;
+  
   }
 
   

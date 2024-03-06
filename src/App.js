@@ -10,6 +10,7 @@ import Wishlist from './Pages/Wishlist';
 import { StyledContainer } from './Ui/ContainerStyle';
 import NotFoundPage from './Pages/Error404';
 import Footer from './Components/Footer';
+import SignUp from './Pages/SignUp';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
          <Route path="/about" element={<About/>} />
          <Route path="/contact" element={<Contact/>} />
          <Route path="/wishlist" element={<Wishlist/>} />
-         <Route path="/cart" element={<Cart/>} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/signup" element={<SignUp/>} />
          <Route path="/product/:id" element={<ProductDetails />} />
          <Route path="/cart" element={<Cart />} />
          <Route path="/checkout" element={<Checkout />} />
