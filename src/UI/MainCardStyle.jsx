@@ -1,11 +1,40 @@
 import { styled } from "styled-components";
 
 export const StyledCard = styled.div`
-  height: 350px;
-  width: 270px;
+  height: 370px;
+  width:270px;
   margin: 10px 0;
   position: relative;
 `;
+export const StyledBSCard = styled.div`
+  height: 350px;
+  width: 350px;
+  margin: 10px 0;
+  position: relative;
+  @media (max-width: 1733px) {
+    height: 350px;
+    width: 300px;
+  }
+  @media (max-width: 1507px) {
+    /* height: 350px; */
+    width: 100%;
+  }
+  @media (max-width: 1106px) {
+    /* height: 320px; */
+    width: 100%;
+  }
+  @media (max-width: 677px) {
+    /* height: 300px; */
+    width: 100%;
+  }
+  @media (max-width: 462px) {
+    /* height: 300px; */
+    width: 100%;
+  }
+`;
+
+
+
 export const CardImgContainer = styled.div`
   background: #f1f1f196;
   height: 250px;
@@ -22,13 +51,22 @@ export const CardBody = styled.div`
   padding: 5px 0;
   height: auto;
 `;
-export const LimitedTitle = styled.p`
+export const LimitedOff = styled.p`
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   padding : 2px 4px; 
   color: #fff;
   border-radius: 2px;
   background: #ff0000;
+  width : 40px;
+  display : grid;
+  place-items : center;
+
+`;
+export const LimitedTitle = styled.p`
+  font-size: 13px;
+  font-weight:700;
+  color: #ff0000;
 `;
 export const CardTitle = styled.h2`
   font-size: 15px;

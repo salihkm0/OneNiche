@@ -182,3 +182,30 @@
 //   width: 100%;
 //   /* margin-left:20px; */
 // `;
+
+export const StyledFlashCard = styled.div`
+  height: 350px;
+  width: 350px;
+  margin: 10px 0;
+  position: relative;
+  @media (max-width: 1733px) {
+    height: 350px;
+    width: 300px;
+  }
+  @media (max-width: 1507px) {
+    /* height: 350px; */
+    width: 100%;
+  }
+  @media (max-width: 1106px) {
+    /* height: 320px; */
+    width: 100%;
+  }
+  @media (max-width: 677px) {
+    /* height: 300px; */
+    width: 100%;
+  }
+  @media (max-width: 462px) {
+    /* height: 300px; */
+    width: 100%;
+  }
+`;

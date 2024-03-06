@@ -86,7 +86,7 @@ export default function Feature() {
               >
                 <h4>Free delivery for all orders over $140</h4>
               </List>
-            </Stack>{" "}
+            </Stack>
           </Grid>
 
           <Grid
@@ -102,7 +102,7 @@ export default function Feature() {
                 marginLeft: { sm: "2.8em" },
               }}
             >
-              {" "}
+              
               <Box
                 sx={{
                   height: { lg: "70px", xs: "50px" },
@@ -159,7 +159,7 @@ export default function Feature() {
               >
                 <h4>Friendly 24/7 customer support</h4>
               </List>
-            </Stack>{" "}
+            </Stack>
           </Grid>
 
           <Grid
@@ -175,7 +175,7 @@ export default function Feature() {
                 marginLeft: { sm: "2em" },
               }}
             >
-              {" "}
+              
               <Box
                 sx={{
                   height: { lg: "70px", xs: "50px" },
