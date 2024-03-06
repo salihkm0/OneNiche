@@ -18,7 +18,7 @@ export default function Router() {
     <Route path="/wishlist" element={<Wishlist />} />
     <Route path="/cart" element={<Cart />} />
     <Route path="/product/:id" element={<ProductDetails />} />
-    {/* <Route path="/product/:catagory" element={<Cart />} /> */}
+    <Route path="/product/:catagory" element={<Home />} />
     <Route path="/user/profile" element={<UserProfile />} />
     <Route path="/checkout" element={<Checkout />} />
     <Route path="*" element={<NotFoundPage />} />

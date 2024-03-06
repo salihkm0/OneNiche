@@ -1,5 +1,6 @@
 
 import { BestSelling } from '../Components/BestSelling'
+import { Category } from '../Components/Category'
 // import FlashSale from '../Components/CountDown'
 import Feature from '../Components/Feature'
 import { FlashSale } from '../Components/FlashSale'
@@ -13,11 +14,8 @@ export default function Home() {
     
     
     <HomePageSlider/>
-      <HomeContainerMain>
-        
       <FlashSale/>
-         {/* <Cart/> */}
-      </HomeContainerMain>
+      <Category/>
       <BestSelling/>
       <LimtedTime/>
       <OurProducts/>
