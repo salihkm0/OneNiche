@@ -2,9 +2,17 @@ import { styled } from "styled-components";
 
 export const StyledCard = styled.div`
   height: 370px;
-  width:270px;
+  width: 270px;
   margin: 10px 0;
   position: relative;
+  @media (max-width: 1028px) {
+    height: 300px;
+    width: 220px;
+  }
+  @media (max-width: 600px) {
+    height: 220px;
+    width: 130px;
+  }
 `;
 export const StyledBSCard = styled.div`
   height: 350px;
@@ -16,29 +24,20 @@ export const StyledBSCard = styled.div`
     width: 300px;
   }
   @media (max-width: 1507px) {
-    /* height: 350px; */
-    width: 100%;
-  }
-  @media (max-width: 1106px) {
-    /* height: 320px; */
-    width: 100%;
-  }
-  @media (max-width: 677px) {
-    /* height: 300px; */
-    width: 100%;
-  }
-  @media (max-width: 462px) {
-    /* height: 300px; */
     width: 100%;
   }
 `;
-
-
 
 export const CardImgContainer = styled.div`
   background: #f1f1f196;
   height: 250px;
   width: 100%;
+  @media (max-width: 1028px) {
+    height: 180px;
+  }
+  @media (max-width: 600px) {
+    height: 130px;
+  }
 `;
 export const CardImg = styled.img`
   display: grid;
@@ -54,18 +53,17 @@ export const CardBody = styled.div`
 export const LimitedOff = styled.p`
   font-size: 12px;
   font-weight: 500;
-  padding : 2px 4px; 
+  padding: 2px 4px;
   color: #fff;
   border-radius: 2px;
   background: #ff0000;
-  width : 40px;
-  display : grid;
-  place-items : center;
-
+  width: 40px;
+  display: grid;
+  place-items: center;
 `;
 export const LimitedTitle = styled.p`
   font-size: 13px;
-  font-weight:700;
+  font-weight: 700;
   color: #ff0000;
 `;
 export const CardTitle = styled.h2`
@@ -73,12 +71,23 @@ export const CardTitle = styled.h2`
   font-weight: 600;
   color: #5a5a5ae5;
   line-height: 18px;
+  @media (max-width: 1028px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  @media (max-width: 600px) {
+    line-height: 12px;
+    font-size: 10px;
+  }
 `;
 export const CardOffPrice = styled.p`
   font-size: 15px;
   font-weight: 400;
   color: #c11111ee;
   margin-top: 5px;
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 export const CardOgPrice = styled.p`
   font-size: 10px;
@@ -88,10 +97,16 @@ export const CardOgPrice = styled.p`
 `;
 export const CardRatingStar = {
   fontSize: " 15px",
+  "@media (max-width: 600px)": {
+    fontSize: "12px",
+  },
 };
 export const CardRatingCount = {
   fontSize: " 10px",
   color: "#5a5a5ae5",
+  "@media (max-width: 600px)": {
+    fontSize: "8px",
+  },
 };
 export const FavoriteIconContainer = styled.div`
   position: absolute;
@@ -100,9 +115,14 @@ export const FavoriteIconContainer = styled.div`
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
   display: grid;
   place-items: center;
+  /* @media (max-width: 600px) {
+    height: 10px;
+  width: 10px;
+  right: 20px;
+  } */
 `;
 export const NewTimeTag = styled.p`
   position: absolute;
@@ -116,4 +136,9 @@ export const NewTimeTag = styled.p`
   color: #fff;
   display: grid;
   place-items: center;
+  @media (max-width: 600px) {
+    height: 12px;
+    width: 25px;
+    font-size: 8px;
+  }
 `;

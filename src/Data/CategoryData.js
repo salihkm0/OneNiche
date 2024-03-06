@@ -15,13 +15,13 @@ export const categoryData =[
     {
         id : 3,
         Name : 'Headphones',
-        Starting_Price : 19.99,
+        Starting_Price : 9.99,
         img : 'https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg'
     },
     {
         id : 4,
         Name : 'Accessories',
-        Starting_Price : 19.99,
+        Starting_Price : 6.99,
         img : 'https://www.vedantcomputers.com/image/cache/catalog/assets/product/combo/km1650-pro/km1650-pro-1-550x550.jpg'
     },
 ]

@@ -17,7 +17,7 @@ export default function Home() {
       <FlashSale/>
       <Category/>
       <BestSelling/>
-      {/* <LimtedTime/> */}
+      <LimtedTime/>
       <OurProducts/>
       <Feature/>
       

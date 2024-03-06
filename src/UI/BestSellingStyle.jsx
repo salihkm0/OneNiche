@@ -16,6 +16,15 @@ export const BestSellingHeadContainer = styled.div`
 export const BestSellingHead = styled.h1`
   font-size: 30px;
   font-weight : 400;
+  @media (max-width: 1023px) {
+    font-size: 25px;
+  }
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 export const BestSellingCardContainer = styled.div`
   /* background: #552828; */
