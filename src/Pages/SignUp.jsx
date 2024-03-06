@@ -1,5 +1,5 @@
 import React from "react";
-import * as Components from '../Ui/SignUpStyle';
+import * as Components from '../UI/SignUpStyle';
 function SignUp() {
   const [signIn, toggle] = React.useState(true);
   return (
