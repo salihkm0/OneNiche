@@ -19,7 +19,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export const MainCard = ({ id, isNew, imgSrc, inFlashSale,flashSaleOff }) => {
+export const MainCard = ({ id, isNew, imgSrc, inFlashSale, flashSaleOff }) => {
   const [favorite, setFavorite] = useState(false);
   return (
     <StyledCard>
@@ -28,9 +28,13 @@ export const MainCard = ({ id, isNew, imgSrc, inFlashSale,flashSaleOff }) => {
           <FavoriteIcon
             onClick={() => setFavorite(!favorite)}
             sx={{ color: "red" }}
+            // fontSize={"15px"}
           />
         ) : (
-          <FavoriteBorderIcon onClick={() => setFavorite(!favorite)} />
+          <FavoriteBorderIcon
+            onClick={() => setFavorite(!favorite)}
+            // fontSize={"15px"}  
+          />
         )}
       </FavoriteIconContainer>
       {isNew ? <NewTimeTag>New</NewTimeTag> : <></>}
