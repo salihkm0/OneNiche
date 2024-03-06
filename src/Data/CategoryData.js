@@ -20,7 +20,7 @@ export const categoryData =[
     },
     {
         id : 4,
-        Name : 'Keyboard & Mouse',
+        Name : 'Accessories',
         Starting_Price : 19.99,
         img : 'https://www.vedantcomputers.com/image/cache/catalog/assets/product/combo/km1650-pro/km1650-pro-1-550x550.jpg'
     },

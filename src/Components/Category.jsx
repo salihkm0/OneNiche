@@ -90,10 +90,6 @@ import {
 export const Category = () => {
   return (
     <CategoryContainer
-      direction={"row"}
-      alignItems="center"
-      spacing={1}
-      justifyContent={"space-between"}
     >
       {categoryData.map((category) => (
         <Link to={`/product/${category.Name}`}>
