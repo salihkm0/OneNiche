@@ -28,7 +28,7 @@ export const BestSelling = () => {
     centerPadding: "-10px",
     // fade: true,
     // dots: true,
-    // infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -43,10 +43,9 @@ export const BestSelling = () => {
       {
         breakpoint: 2200,
         settings: {
-          slidesToShow: 4.5,
+          slidesToShow: 5,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+
         },
       },
       {
@@ -54,52 +53,80 @@ export const BestSelling = () => {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
       {
         breakpoint: 1357,
         settings: {
-          slidesToShow: 3.5,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
+      // {
+      //   breakpoint: 1013,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 1,
+      //     // initialSlide: 2,
+      //   },
+      // },
       {
-        breakpoint: 1013,
+        breakpoint: 778,
         settings: {
-          slidesToShow: 2.8,
+          slidesToShow: 2.5,
           slidesToScroll: 1,
           // initialSlide: 2,
+          centerMode: true,
         },
       },
       {
-        breakpoint: 818,
-        settings: {
-          slidesToShow: 2.3,
-          slidesToScroll: 1,
-          // initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 677,
+        breakpoint: 616,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "-40px",
+          // centerPadding: "-40px",
 
           // initialSlide: 2,
         },
       },
       {
-        breakpoint: 462,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3.5,
           slidesToScroll: 1,
-          // centerMode: true,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 506,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 433,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+        },
+      },
+      {
+        breakpoint: 381,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
           // centerPadding: "-40px",
         },
       },

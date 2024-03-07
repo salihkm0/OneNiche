@@ -1,27 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as Components from "../UI/SignUpStyle";
 
 
 export const SignUp = () => {
   const [signIn, toggle] = useState(true);
+
   return (
     <Components.Container>
       <Components.SignUpContainer signinIn={signIn}>
-        <Components.Form>
+        <Components.Form action="/user/profile">
           <Components.Title>Create Account</Components.Title>
           <Components.Input type="text" placeholder="Name" />
           <Components.Input type="email" placeholder="Email" />
           <Components.Input type="password" placeholder="Password" />
-          <Components.Button>Sign Up</Components.Button>
+          <Components.Input type="password" placeholder="confirm Password" />
+          <Components.Button type="submit">Sign Up</Components.Button>
         </Components.Form>
       </Components.SignUpContainer>
       <Components.SignInContainer signinIn={signIn}>
-        <Components.Form>
+        <Components.Form action="/user/profile">
           <Components.Title>Sign in</Components.Title>
           <Components.Input type="email" placeholder="Email" />
           <Components.Input type="password" placeholder="Password" />
           <Components.Anchor href="#">Forgot your password?</Components.Anchor>
-          <Components.Button>Sigin In</Components.Button>
+          <Components.Button type="submit">Sigin In</Components.Button>
         </Components.Form>
       </Components.SignInContainer>
       <Components.OverlayContainer signinIn={signIn}>

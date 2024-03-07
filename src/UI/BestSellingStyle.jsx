@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const BestSellingContainer = styled.div`
   /* background: #ccc; */
   width: 100%;
-  height: auto;
+  height: 342px;
   padding: 10px 0;
   /* margin-top: 40px; */
 `;
@@ -29,6 +29,6 @@ export const BestSellingHead = styled.h1`
 export const BestSellingCardContainer = styled.div`
   /* background: #552828; */
   width: 100%;
-  height: 380px;
+  height: 100%;
   padding: 30px 0px;
 `;

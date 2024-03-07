@@ -32,7 +32,7 @@ export const CategoryContainer = styled.div`
   height: 100%;
   /* background : #ccc; */
   padding: 20px 0;
-  margin: 40px 0;
+  margin: 140px 0 20px 0;
   display : flex;
   align-items :  center;
   justify-content : space-around;

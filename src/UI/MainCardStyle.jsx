@@ -10,8 +10,8 @@ export const StyledCard = styled.div`
     width: 220px;
   }
   @media (max-width: 600px) {
-    height: 220px;
-    width: 130px;
+    height: 240px;
+    width: 122px;
   }
 `;
 export const StyledBSCard = styled.div`
