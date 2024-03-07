@@ -23,18 +23,19 @@ export const FlashSale = () => {
   //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-yZ8nf8gQFNKvCRr2iaf3enZz3Pswin4UQ&usqp=CAU";
   // const Img6 =
   //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4FmLD0c-H6iyemLJr9jI63636h5_f75Qr1u_5z43cWgh4XOi0UEhZ2Ogul9alC8J9ck&usqp=CAU";
+  
   var settings = {
     // className: "center",
     // centerMode: true,
     centerPadding: "-10px",
     // fade: true,
-    dots: false, 
-    infinite: false,
+    // dots: true,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
     // pauseOnHover: false,
@@ -44,10 +45,9 @@ export const FlashSale = () => {
       {
         breakpoint: 2200,
         settings: {
-          slidesToShow: 4.5,
+          slidesToShow: 5,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+
         },
       },
       {
@@ -55,52 +55,80 @@ export const FlashSale = () => {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
       {
         breakpoint: 1357,
         settings: {
-          slidesToShow: 3.5,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
+      // {
+      //   breakpoint: 1013,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 1,
+      //     // initialSlide: 2,
+      //   },
+      // },
       {
-        breakpoint: 1013,
+        breakpoint: 778,
         settings: {
-          slidesToShow: 2.8,
+          slidesToShow: 2.5,
           slidesToScroll: 1,
           // initialSlide: 2,
+          centerMode: true,
         },
       },
       {
-        breakpoint: 818,
-        settings: {
-          slidesToShow: 2.3,
-          slidesToScroll: 1,
-          // initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 677,
+        breakpoint: 616,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "-40px",
+          // centerPadding: "-40px",
 
           // initialSlide: 2,
         },
       },
       {
-        breakpoint: 462,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3.5,
           slidesToScroll: 1,
-          // centerMode: true,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 506,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 433,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+        },
+      },
+      {
+        breakpoint: 381,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
           // centerPadding: "-40px",
         },
       },
@@ -125,7 +153,7 @@ export const FlashSale = () => {
           direction={"row"}
           alignItems={"center"}
           justifyContent={"center"}
-          marginTop = {"80px"}
+          marginTop = {"10px"}
         >
           <StyledButton $primary>View All</StyledButton>
         </Stack>

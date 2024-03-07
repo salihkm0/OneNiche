@@ -91,9 +91,9 @@ font-size: 1.8vh;
 
 
 export const Button = styled.button`
-    border-radius: 20px;
-    border: 1px solid #0641c1;
-    background-color: #0044fe;
+    border-radius: 10px;
+    border: 1px solid #d56102;
+    background-color: #ff7300;
     box-shadow: 0 12px 22px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
     color: #ffffff;
     font-size: 12px;
@@ -121,7 +121,6 @@ export const GhostButton = styled(Button)`
  background-color: transparent;
  border-color: #ffffff;
  `;
-
 export const Anchor = styled.a`
  color: #333;
  font-size: 14px;
@@ -148,7 +147,7 @@ ${props =>
 export const Overlay = styled.div`
 background: #ff003c;
 background: -webkit-linear-gradient(to right, #ff4b2b, #fa003a);
-background: linear-gradient(to right, #030392, #175bcf);
+background: linear-gradient(to right, #cf5d00, #ff7300);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 0 0;

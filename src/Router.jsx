@@ -8,6 +8,7 @@ import ProductDetails from "./Pages/ProductDetails";
 import Wishlist from "./Pages/Wishlist";
 import NotFoundPage from "./Pages/Error404";
 import { UserProfile } from "./Pages/UserProfile";
+import { SignUp } from './Pages/SignUp';
 
 export default function Router() {
   return (
@@ -20,6 +21,7 @@ export default function Router() {
     <Route path="/product/:id" element={<ProductDetails />} />
     <Route path="/product/:catagory" element={<Home />} />
     <Route path="/user/profile" element={<UserProfile />} />
+    <Route path="/user/signup" element={<SignUp/>} />
     <Route path="/checkout" element={<Checkout />} />
     <Route path="*" element={<NotFoundPage />} />
   </Routes>

@@ -27,4 +27,8 @@ export const OurProductsCardContainer = styled.div`
   align-items : center;
   flex-wrap : wrap;
   gap : 2rem;
+  @media (max-width: 600px) {
+    padding: 0;
+    gap : 0;
+  }
 `;

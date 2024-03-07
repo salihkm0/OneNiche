@@ -65,7 +65,7 @@ export default function Navbar() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/Signup">Sign Up</NavLink>
+            <NavLink to="/user/signup">Sign Up</NavLink>
           </li>
 
         </NavLinks>
