@@ -23,7 +23,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 export default function CountDown() {
   return (
     <div>
-      <Countdown zeroPadTime={2} date={Date.now() + 10000*60} renderer={renderer} />
+      <Countdown zeroPadTime={2} date={Date.now() + 10000*60*60} renderer={renderer} />
     </div>
   );
 }

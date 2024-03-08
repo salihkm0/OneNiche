@@ -1,8 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import Divider from "@mui/material/Divider";
 import { Grid } from "@mui/material";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+import { Link } from "react-router-dom";
 
 const mobileBreakpoint = "767px";
 const tabletMinWidth = "768px";
@@ -16,13 +16,61 @@ export default function Footer() {
         <Grid item xs={6} lg={3}>
           <SecondDiv>
             <FirstHeading>Account</FirstHeading>
-            <SubHeading>My Account</SubHeading>
-            <SubHeading>Login / Register</SubHeading>
-            <SubHeading>Cart</SubHeading>
-            <SubHeading>Wishlist</SubHeading>
-            <SubHeading>Shop</SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/user/profile"}>
+                My Account
+              </Link>
+            </SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/"}>
+                Login / Register
+              </Link>
+            </SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/cart"}>
+                Cart
+              </Link>
+            </SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/wishlist"}>
+                Wishlist
+              </Link>
+            </SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/"}>
+                Shop
+              </Link>
+            </SubHeading>
           </SecondDiv>
         </Grid>
+
+        <Grid item xs={6} lg={3}>
+          <SecondDiv>
+            <FirstHeading>Quick Link</FirstHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/"}>
+                Privacy Policy
+              </Link>
+            </SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/"}>
+                {" "}
+                Terms Of Use
+              </Link>
+            </SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/"}>
+                FAQ
+              </Link>
+            </SubHeading>
+            <SubHeading>
+              <Link className="secondary" to={"/"}>
+                Contact
+              </Link>
+            </SubHeading>
+          </SecondDiv>
+        </Grid>
+
         <Grid item xs={6} lg={3}>
           <SecondDiv>
             <FirstHeading>Exclusive</FirstHeading>
@@ -36,6 +84,20 @@ export default function Footer() {
                 lg: 'large',xs:'small',sm:'small'
               }}} />
             </EmailInputContainer>
+            <form action="">
+              <EmailInputContainer>
+                <EmailInput placeholder=" Enter your email " type="text" />
+                <SendOutlinedIcon
+                  sx={{
+                    fontSize: {
+                      lg: "large",
+                      xs: "small",
+                      sm: "medium",
+                    },
+                  }}
+                />
+              </EmailInputContainer>
+            </form>
           </SecondDiv>
         </Grid>
 
@@ -43,21 +105,10 @@ export default function Footer() {
           <SecondDiv>
             <FirstHeading>Support</FirstHeading>
             <SubHeading>
-             
               111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.
             </SubHeading>
             <SubHeading>exclusive@gmail.com</SubHeading>
             <SubHeading> +88015-88888-9999</SubHeading>
-          </SecondDiv>
-        </Grid>
-
-        <Grid item xs={6} lg={3}>
-          <SecondDiv>
-            <FirstHeading>Privacy Policy</FirstHeading>
-            <SubHeading> Terms Of Use</SubHeading>
-            <SubHeading>FAQ</SubHeading>
-            <SubHeading>Cart</SubHeading>
-            <SubHeading>Contact</SubHeading>
           </SecondDiv>
         </Grid>
       </GridContainer>
@@ -68,7 +119,7 @@ export default function Footer() {
           backgroundColor: "rgb(171, 171, 171)",
         }}
       />
-      <CopyRight>© Copyright Rimel 2024. All right reserved</CopyRight>
+      <CopyRight>© Copyright Team 2024. All right reserved</CopyRight>
     </StyledFooter>
   );
 }
@@ -117,8 +168,8 @@ const SecondDiv = styled.div`
 
 const FirstHeading = styled.ul`
   font-size: 3.3vh;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; */
   margin-left: 10vh;
 
   @media (max-width: ${mobileBreakpoint}) {
@@ -132,7 +183,7 @@ const FirstHeading = styled.ul`
 
 const SubHeading = styled.li`
   font-size: 2.2vh;
-  font-family: "Lucida Sans Unicode";
+  /* font-family: "Lucida Sans Unicode"; */
   margin-top: 1vh;
 
   margin-left: 10vh;
@@ -145,7 +196,6 @@ const SubHeading = styled.li`
     font-size: 1.7vh;
   }
 `;
-
 
 const CopyRight = styled.p`
   font-size: large;
@@ -180,14 +230,14 @@ font-size:2.2vh;
     @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
     font-size:1.5vh;
 
+    font-size:1.7vh;
   }
-  
 `;
 const EmailInputContainer = styled.div`
-display:flex;
-justify-content: space-between;
-align-items:center;
-border:1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
   height: 5vh;
   width: 25vh;
   margin-top: 2vh;
@@ -200,15 +250,11 @@ border:1px solid white;
   margin-top: 2vh;
   margin-left: 2.4vh;
   border-radius: 3px;}
-
     @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
     height: 2.6vh;
   width: 17vh;
   margin-top: 1vh;
   margin-left: 9.5vh;
   border-radius: 3px;
-  
   }
-
-  
-`
+`;

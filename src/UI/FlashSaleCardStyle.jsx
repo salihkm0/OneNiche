@@ -4,22 +4,24 @@ import styled from "styled-components";
 export const CardMainBox = {
   // backgroundColor: "#090808ad",
   overflowX: "scroll",
-  width: "88vw",
+  width: "72vw",
   padding: "10px",
   paddingRight:"20px",
   display:"flex",
   alignItems:" center",
   justifyContent:"start",
-
-
+  '@media (min-width:1920px)': {
+    // width: "57vw",
+  },
   '@media (max-width:600px)': {
    width:"370px",
    height:"410px",
-   paddingRight:"20px",
-   alignItems:"start",
+   paddingRight:"35px",
+   marginLeft:"10px",
    display:"flex",
    flexDirection:"column",
    flexWrap:" wrap",
+   alignItems:"start",
 
   },
   '@media (min-width:1920px)': {
@@ -35,20 +37,22 @@ export const CardInsideBox = {
   // backgroundColor: "#dcdcdcf7",
   // borderColor: "#434241",
     // width: "230px",
-  boxShadow:`rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px`,
-  
+  boxShadow:` rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+              rgba(14, 30, 37, 0.32) 0px 2px 16px 0px`,
   height: "100%",
   marginLeft: "10px",
   marginRight: "10px",
   borderRadius:" 10px",
   '@media (max-width:600px)': {
-    height: "185px",
-    width: "165px",
+    height: "180px",
+    width: "150px",
     paddingBottom:"10px",
     margin:"2.5px",
-    marginLeft:"3px"
+    marginLeft:"10px",
+    // marginRight: "5px",
+    marginBottom:"10px",
   },
+
   '@media (min-width:601px)': {
     '&:hover': {
       backgroundColor: '#f8f8f8f7',
@@ -76,7 +80,7 @@ export const ProductImg = styled.img`
 `;
 
 export const CardImgCont = styled.div`
-  background-Color:#3b3b3b56;
+  /* background-Color:#3b3b3b56; */
   /* padding: 2px; */
   /* border-radius: 10px; */
   border-top-left-radius:10px;
@@ -159,37 +163,7 @@ export const CardOGPrice = styled.p`
 //     height: 36px;
 //   }
 // `;
-export const CardBottmMain = styled.div`
-  /* background-color:#0c0c0ccd;  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  width: 100%px;
-  /* margin-left:20px; */
-`;
-export const ViewAll = styled.button`
-  background-color:#ff7300; 
-  color: #010101;
-  border: none;
-  height: 50px;
-  width:120px;
-  font-size: 12px;
-  margin-top:7px;
-  border-radius: 5px;
-  @media (max-width:600px) {
-    height: 40px;
-    width:80px;
-    margin-bottom:10px;
-  }
-  &:hover {
-    background-color: #ff7300d7;
-    color: #010101;
-    font-size: 13px;
-  }
-  
 
-`;
 export const RatingBox = styled.div`
   font-size: 10px;
   display: flex;
@@ -199,3 +173,12 @@ export const RatingBox = styled.div`
 export const RatingSt = {
     fontSize:" 10px",
 }
+export const CardButtonContainer = styled.div`
+  /* background-color:#0c0c0ccd;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* margin-left:20px; */
+`;
