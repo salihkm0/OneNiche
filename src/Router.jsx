@@ -9,6 +9,7 @@ import Wishlist from "./Pages/Wishlist";
 import NotFoundPage from "./Pages/Error404";
 import { UserProfile } from "./Pages/UserProfile";
 import { SignUp } from './Pages/SignUp';
+import ProductList from "./Pages/ProductList";
 
 export default function Router() {
   return (
@@ -19,7 +20,8 @@ export default function Router() {
     <Route path="/wishlist" element={<Wishlist />} />
     <Route path="/cart" element={<Cart />} />
     <Route path="/product/:id" element={<ProductDetails />} />
-    <Route path="/product/:catagory" element={<Home />} />
+    <Route path="/products/:catagory" element={<ProductList />} />
+    <Route path="/products/:catagory/:flter" element={<ProductList />} />
     <Route path="/user/profile" element={<UserProfile />} />
     <Route path="/user/signup" element={<SignUp/>} />
     <Route path="/checkout" element={<Checkout />} />
