@@ -32,13 +32,16 @@ export const CategoryContainer = styled.div`
   height: 100%;
   /* background : #ccc; */
   padding: 20px 0;
-  margin: 140px 0 20px 0;
+  margin: 20px 0;
   display : flex;
   align-items :  center;
   justify-content : space-around;
   gap : 1rem;
   @media (max-width: 637px) {
     flex-wrap : wrap;
+}
+@media (max-width: 600px) {
+  margin: 140px 0 20px 0;
 }
 `;
 export const CategoryCard = styled(Box)`

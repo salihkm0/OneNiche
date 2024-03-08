@@ -1,13 +1,21 @@
-import React from 'react'
-import { CarTContainer } from '../UI/Cartstyle'
+import { Bold, CartAddress, CartAddressButton, CartAddressContainer, CartLeftContainer, CartMainContainer, CartRightContainer, CartSubContainer } from "../UI/Cartstyle";
 
 
-export default function Cart() {
-  return (
-    <div>
-     <CarTContainer>
-      <h1>Your Shopping Cart</h1>
-     </CarTContainer>
-    </div>
+export const Cart = () => {
+  return(
+   <CartMainContainer>
+      <CartLeftContainer>
+          <CartAddressContainer>
+            <CartAddress>Deliver to: <Bold>Malappuram - 349023</Bold></CartAddress>
+            <CartAddressButton>Change</CartAddressButton>
+          </CartAddressContainer>
+          <CartSubContainer>
+            
+          </CartSubContainer>
+      </CartLeftContainer>
+      <CartRightContainer>
+        Right
+      </CartRightContainer>
+    </CartMainContainer>
   )
-}
+};

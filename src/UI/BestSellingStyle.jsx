@@ -3,9 +3,11 @@ import { styled } from "styled-components";
 export const BestSellingContainer = styled.div`
   /* background: #ccc; */
   width: 100%;
-  height: 342px;
+  height: auto;
   padding: 10px 0;
-  /* margin-top: 40px; */
+  @media (max-width: 600px) {
+    height: 342px;
+  }
 `;
 export const BestSellingHeadContainer = styled.div`
   display: flex;
