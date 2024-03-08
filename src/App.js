@@ -13,12 +13,9 @@ import Footer from "./Components/Footer";
 import { UserProfile } from "./Pages/UserProfile";
 import ProductList from "./Pages/ProductList";
 
-
-
 function App() {
   return (
     <>
-
       <Router>
         <Header />
         <StyledContainer>
@@ -30,14 +27,14 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/products/:catagory" element={<ProductList />} />
+            <Route path="/products/:catagory/:flter" element={<ProductList />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/user/profile" element={<UserProfile />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<NotFoundPage />} />
-
           </Routes>
         </StyledContainer>
-
+        <Footer/>
       </Router>
     </>
   );

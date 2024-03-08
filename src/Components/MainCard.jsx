@@ -14,6 +14,7 @@ import {
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const MainCard = () => {
   const [favorite, setFavorite] = useState(false);
@@ -26,9 +27,13 @@ export const MainCard = () => {
           <FavoriteBorderIcon onClick={() => setFavorite(!favorite)} />
         )}
       </FavoriteIconContainer>
+
+  
       <CardImgContainer>
         <CardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
       </CardImgContainer>
+
+      
       <CardBody>
         <CardTitle>RK ROYAL KLUDGE RK61 Mechanical Keyboard</CardTitle>
         <Stack

@@ -106,7 +106,7 @@ export const SmallImg = styled.img`
     // @media (max-width: 1380px) {}
     @media (max-width: 930px) {
         height:110px;
-        max-width=125px;
+        max-width:125px;
         // width:auto;
     }
     @media (max-width: 775px) {

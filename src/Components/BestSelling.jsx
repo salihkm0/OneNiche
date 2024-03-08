@@ -100,7 +100,7 @@ export const BestSelling = () => {
         }
       ]
   };
-  const catagory ="all"
+  const catagory ="bestselling "
   return (
     <>
       <BestSellingContainer>
@@ -112,10 +112,10 @@ export const BestSelling = () => {
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>
-            <MainCard/>
-            <MainCard/>
-            <MainCard/>
-            <MainCard/>
+            <MainCard />
+            <MainCard />
+            <MainCard />
+            <MainCard />
           </Slider>
           
         </BestSellingCardContainer>
