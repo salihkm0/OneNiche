@@ -3,7 +3,7 @@ import Header from "./Components/Header";
 import { StyledContainer } from "./UI/ContainerStyle";
 import Router from "./Router";
 import Footer from "./Components/Footer";
-import ProductList from "./Pages/ProductList";
+
 
 function App() {
   return (
