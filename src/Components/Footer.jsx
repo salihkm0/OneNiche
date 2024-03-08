@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Divider from "@mui/material/Divider";
-import { Grid, InputAdornment } from "@mui/material";
+import { Grid } from "@mui/material";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 
-const mobileBreakpoint = "450px";
+const mobileBreakpoint = "767px";
 const tabletMinWidth = "768px";
-const tabletMaxWidth = "1224px";
-
+const tabletMaxWidth = "1023px";
+const LapMinWidth = "1024px";
+const LapMaxWidth = "1439px";
 export default function Footer() {
   return (
     <StyledFooter>
@@ -32,7 +33,7 @@ export default function Footer() {
               
               <EmailInput placeholder="Enter your email " type="text" />
               <SendOutlinedIcon sx={{ fontSize:{
-                lg: 'large',xs:'small',sm:'medium'
+                lg: 'large',xs:'small',sm:'small'
               }}} />
             </EmailInputContainer>
           </SecondDiv>
@@ -76,14 +77,18 @@ export default function Footer() {
 const StyledFooter = styled.div`
   background-color: black;
   width: 100%;
-  height: 37vh;
+  height: 43vh;
 
+  @media (min-width: ${LapMinWidth}) and (max-width: ${LapMaxWidth}) {
+    height: 30%;
+  }
   @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    height: 45vh;
+    height: 57vh;
   }
   @media (max-width: ${mobileBreakpoint}) {
-    height: 45vh;
+    height: 20%;
   }
+  
 `;
 
 const GridContainer = styled(Grid)`
@@ -96,8 +101,19 @@ const GridContainer = styled(Grid)`
 const SecondDiv = styled.div`
   color: white;
   list-style-type: none;
-  padding: 20px 0px 0px 20px;
-`;
+  
+  justify-content: space-between;
+ padding: 40px 0px 0px 90px;
+    @media (min-width: ${LapMinWidth}) and (max-width: ${LapMaxWidth}) {
+      padding: 4% 0% 0% 25%;
+  }
+    @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
+      padding: 20px 0px 0px 25%;
+  }
+  @media(max-width: ${mobileBreakpoint}){
+       padding: 10% 0% 0% 25%;
+  } 
+`; 
 
 const FirstHeading = styled.ul`
   font-size: 3.3vh;
@@ -106,11 +122,11 @@ const FirstHeading = styled.ul`
   margin-left: 10vh;
 
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: 1.5vh;
+    font-size: 2vh;
     margin-left: 3vh;
   }
 @media(min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}){
-  font-size: 1.8vh;
+  font-size: 2%.5;
 }
 `;
 
@@ -122,25 +138,31 @@ const SubHeading = styled.li`
   margin-left: 10vh;
 
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: 1.2vh;
+    font-size: 1.4vh;
     margin-left: 3vh;
   }
   @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    font-size: 1.3vh;
+    font-size: 1.7vh;
   }
 `;
 
 
 const CopyRight = styled.p`
-  font-size: larger;
+  font-size: large;
   font-weight: 600;
   color: grey;
   justify-content: center;
   display: flex;
   margin-top: 1vh;
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: smaller;
+    font-size: 1.7vh;
     margin-top: 8px;
+  }
+   @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
+    font-size: 2.6vh;
+  }
+   @media (min-width: ${LapMinWidth}) and (max-width: ${LapMaxWidth}) {
+    font-size: 2.8vh;
   }
 `;
 
@@ -156,7 +178,7 @@ font-size:2.2vh;
   font-size:1.3vh;
 }
     @media (min-width: ${tabletMinWidth}) and (max-width: ${tabletMaxWidth}) {
-    font-size:1.7vh;
+    font-size:1.5vh;
 
   }
   

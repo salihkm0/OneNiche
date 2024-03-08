@@ -7,16 +7,27 @@ export default function Feature() {
   return (
     <>
       <Box
-        sx={{
+        sx={{paddingTop: {
+          md: '4em',
+          xs: '3em',
+          lg: '6em',
+          sm:'4em'
+        }, marginLeft: {
+        lg:'2em'
+      },
           height: {
-            lg: "350 px",
-            md: "400px",
-            xs: "210px",
+            
+            xs: "250px",
+            lg: '350px',
+            xl: '450px',
+            md:'300px'
+         
           },
           width: "100%",
-        }}
+        }
+      }
       >
-        <Grid container direction="row" justifyContent="space-around">
+        <Grid container direction="row" justifyContent="space-between">
           <Grid
             direction="column"
             justifyContent={"space-around"}
@@ -26,8 +37,8 @@ export default function Feature() {
           >
             <Stack
               sx={{
-                paddingTop: { lg: "7em", xs: "2em" },
-                marginLeft: { sm: "2em" },
+               
+                marginLeft: { sm: "1em" },
               }}
             >
            
@@ -38,12 +49,16 @@ export default function Feature() {
                     lg: "70px",
                     xs: "50px",
                   },
+
+
+                 
                   borderRadius: { lg: "70px", xs: "50px" },
                   backgroundColor: "rgb(0, 0, 0)",
                   marginLeft: {
-                    lg: "8.2em",
-                    xs: "1.4em",
-                    sm: "7.6vh",
+                    lg: "10em",
+                    xs: "2em",
+                    sm: "9vh",
+                    md:'14vh'
                   },
                 }}
               >
@@ -70,10 +85,10 @@ export default function Feature() {
               <List
                 sx={{
                   // fontFamily: "Tahoma",
-                  marginLeft: { lg: "4.5em", xs: "2em", sm: "5em" },
+                  marginLeft: { lg: "6em", xs: "2em", sm: "3em",md:'6em' },
                   marginTop: { xs: "1em" },
                   fontStyle: "bold",
-                  fontSize: { lg: "1em", xs: ".6em" },
+                  fontSize: { lg: "1em", xs: ".6em",md:'.8em' },
                 }}
               >
                 <h4>FREE AND FAST DELIVERY</h4>
@@ -81,8 +96,8 @@ export default function Feature() {
               <List
                 sx={{
                   // fontFamily: '"Courier New", Courier, monospace',
-                  marginLeft: { xs: "2em" },
-                  fontSize: { lg: "1em", xs: ".5em" },
+                  marginLeft: { xs: "2em",lg:'9.5vh',md:'5em' },
+                  fontSize: { lg: "1em", xs: ".5em",md:'.7em' },
                 }}
               >
                 <h4>Free delivery for all orders over $140</h4>
@@ -99,11 +114,11 @@ export default function Feature() {
           >
             <Stack
               sx={{
-                paddingTop: { lg: "7em", xs: "2em" },
+              
                 marginLeft: { sm: "2.8em" },
               }}
             >
-              {" "}
+       
               <Box
                 sx={{
                   height: { lg: "70px", xs: "50px" },
@@ -115,8 +130,9 @@ export default function Feature() {
                   backgroundColor: "rgb(0, 0, 0)",
                   marginLeft: {
                     lg: "9em",
-                    xs: "2em",
-                    sm: "6.3vh",
+                    xs: "3em",
+                    sm: "3em",
+                    md:'6em'
                   },
                 }}
               >
@@ -143,10 +159,10 @@ export default function Feature() {
               <List
                 sx={{
                   // fontFamily: "Tahoma",
-                  marginLeft: { lg: "4.5em", xs: "2.5em", sm: "4em" },
+                  marginLeft: { lg: "5em", sm: "3em",xs:'2em' },
                   marginTop: { xs: "1em" },
                   fontStyle: "bold",
-                  fontSize: { lg: "1em", xs: ".6em" },
+                  fontSize: { lg: "1em", xs: ".6em" ,md:'.8em'},
                 }}
               >
                 <h4>27/7 CUSTOMER SERVICE</h4>
@@ -154,13 +170,13 @@ export default function Feature() {
               <List
                 sx={{
                   // fontFamily: '"Courier New", Courier, monospace',
-                  marginLeft: { lg: "2em", xs: "2.5em" },
-                  fontSize: { lg: "1em", xs: ".5em" },
+                  marginLeft: { xs: "2.5em", sm: "2.4em",lg:'3em' },
+                  fontSize: { lg: "1em", xs: ".5em",md:'.7em' },
                 }}
               >
                 <h4>Friendly 24/7 customer support</h4>
               </List>
-            </Stack>{" "}
+            </Stack>
           </Grid>
 
           <Grid
@@ -172,11 +188,11 @@ export default function Feature() {
           >
             <Stack
               sx={{
-                paddingTop: { lg: "7em", xs: "2em" },
+               
                 marginLeft: { sm: "2em" },
               }}
             >
-              {" "}
+           
               <Box
                 sx={{
                   height: { lg: "70px", xs: "50px" },
@@ -188,8 +204,9 @@ export default function Feature() {
                   backgroundColor: "rgb(0, 0, 0)",
                   marginLeft: {
                     lg: "9em",
-                    xs: "2em",
-                    sm: "6.3vh",
+                  xs:'3em',
+                    sm: "3.5em",
+                    md:'15vh'
                   },
                 }}
               >
@@ -216,10 +233,10 @@ export default function Feature() {
               <List
                 sx={{
                   // fontFamily: "Tahoma",
-                  marginLeft: { lg: "5em", xs: "3em", sm: "3.5em" },
+                  marginLeft: { lg: "5em", xs: "4em", sm: "4em" },
                   marginTop: { xs: "1em" },
                   fontStyle: "bold",
-                  fontSize: { lg: "1em", xs: ".6em" },
+                  fontSize: { lg: "1em", xs: ".6em",md:'.8em' },
                 }}
               >
                 <h4>MONEY BACK GUARANTEE</h4>
@@ -227,8 +244,8 @@ export default function Feature() {
               <List
                 sx={{
                   // fontFamily: '"Courier New", Courier, monospace',
-                  marginLeft: { lg: "3em", xs: "2.5em", sm: "1.5em" },
-                  fontSize: { lg: "1em", xs: ".5em" },
+                  marginLeft: { lg: "3em", xs: "4em", sm: "4.4em" },
+                  fontSize: { lg: "1em", xs: ".5em",md:'.7em' },
                 }}
               >
                 <h4>We return money within 30 days</h4>
