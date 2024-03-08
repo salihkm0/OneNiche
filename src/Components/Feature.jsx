@@ -41,7 +41,7 @@ export default function Feature() {
                   backgroundColor: "rgb(0, 0, 0)",
                   marginLeft: {
                     lg: "8.2em",
-                    xs: "1.6em",
+                    xs: "1.4em",
                     sm: "7.6vh",
                   },
                 }}
@@ -81,12 +81,12 @@ export default function Feature() {
                 sx={{
                   // fontFamily: '"Courier New", Courier, monospace',
                   marginLeft: { xs: "2em" },
-                  fontSize: { lg: "1em", xs: ".6em" },
+                  fontSize: { lg: "1em", xs: ".5em" },
                 }}
               >
                 <h4>Free delivery for all orders over $140</h4>
               </List>
-            </Stack>{" "}
+            </Stack>
           </Grid>
 
           <Grid
@@ -102,7 +102,7 @@ export default function Feature() {
                 marginLeft: { sm: "2.8em" },
               }}
             >
-              {" "}
+              
               <Box
                 sx={{
                   height: { lg: "70px", xs: "50px" },
@@ -154,12 +154,12 @@ export default function Feature() {
                 sx={{
                   // fontFamily: '"Courier New", Courier, monospace',
                   marginLeft: { lg: "2em", xs: "2.5em" },
-                  fontSize: { lg: "1em", xs: ".6em" },
+                  fontSize: { lg: "1em", xs: ".5em" },
                 }}
               >
                 <h4>Friendly 24/7 customer support</h4>
               </List>
-            </Stack>{" "}
+            </Stack>
           </Grid>
 
           <Grid
@@ -175,7 +175,7 @@ export default function Feature() {
                 marginLeft: { sm: "2em" },
               }}
             >
-              {" "}
+              
               <Box
                 sx={{
                   height: { lg: "70px", xs: "50px" },
@@ -227,7 +227,7 @@ export default function Feature() {
                 sx={{
                   // fontFamily: '"Courier New", Courier, monospace',
                   marginLeft: { lg: "3em", xs: "2.5em", sm: "1.5em" },
-                  fontSize: { lg: "1em", xs: ".6em" },
+                  fontSize: { lg: "1em", xs: ".5em" },
                 }}
               >
                 <h4>We return money within 30 days</h4>

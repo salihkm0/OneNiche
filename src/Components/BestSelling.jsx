@@ -6,39 +6,8 @@ import {
   BestSellingHeadContainer,
 } from "../UI/BestSellingStyle";
 import { StyledButton } from "../UI/ButtonStyle";
-// import Cards from "./FlahSaleCards";
 import { MainCard } from "./MainCard";
 import MiniButton from "./MiniButton";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "flex",
-        background: "green",
-        padding: "15px",
-        borderRadius: "50%",
-        textAlign: "center",
-        justifyContent: "center",
-      }}
-      onClick={onClick}
-    />
-  );
-}
 
 export const BestSelling = () => {
   const Img1 =
@@ -49,17 +18,17 @@ export const BestSelling = () => {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b4rI5AW28iO23T7DkbHy4RXbLUhSgtTEIQ&usqp=CAU";
   const Img4 =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qsBkvANV-BhKx1dr1ym1umis0ALMauxPGg&usqp=CAU";
-  const Img5 =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-yZ8nf8gQFNKvCRr2iaf3enZz3Pswin4UQ&usqp=CAU";
-  const Img6 =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4FmLD0c-H6iyemLJr9jI63636h5_f75Qr1u_5z43cWgh4XOi0UEhZ2Ogul9alC8J9ck&usqp=CAU";
+  // const Img5 =
+  //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-yZ8nf8gQFNKvCRr2iaf3enZz3Pswin4UQ&usqp=CAU";
+  // const Img6 =
+  //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4FmLD0c-H6iyemLJr9jI63636h5_f75Qr1u_5z43cWgh4XOi0UEhZ2Ogul9alC8J9ck&usqp=CAU";
   var settings = {
     // className: "center",
     // centerMode: true,
-    // centerPadding: "-100px",
+    centerPadding: "-10px",
     // fade: true,
-    dots: true,
-    // infinite: false,
+    // dots: true,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -69,36 +38,99 @@ export const BestSelling = () => {
     cssEase: "linear",
     // pauseOnHover: false,
     // focusOnSelect: true,
-    // nextArrow: <SampleNextArrow/>,
-    // prevArrow: <SamplePrevArrow/>,
 
     responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
+      {
+        breakpoint: 2200,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+
         },
-        {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
+      },
+      {
+        breakpoint: 1519,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-          }
-        }
-      ]
+      },
+      {
+        breakpoint: 1357,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      // {
+      //   breakpoint: 1013,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 1,
+      //     // initialSlide: 2,
+      //   },
+      // },
+      {
+        breakpoint: 778,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          // initialSlide: 2,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 616,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 506,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 433,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+        },
+      },
+      {
+        breakpoint: 381,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+        },
+      },
+    ],
   };
   const catagory ="bestselling "
   return (
@@ -112,12 +144,11 @@ export const BestSelling = () => {
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>
-            <MainCard />
-            <MainCard />
-            <MainCard />
-            <MainCard />
+            <MainCard id={"1"} isNew={true}  imgSrc={Img1}  inFlashSale = {false} flashSaleOff = {25}/>
+            <MainCard id={"2"} isNew={false} imgSrc={Img2}  inFlashSale = {false} flashSaleOff = {50}/>
+            <MainCard id={"3"} isNew={false} imgSrc={Img3}  inFlashSale = {false} flashSaleOff = {10}/>
+            <MainCard id={"4"} isNew={true}  imgSrc={Img4}  inFlashSale = {false} flashSaleOff = {30}/>
           </Slider>
-          
         </BestSellingCardContainer>
       </BestSellingContainer>
     </>

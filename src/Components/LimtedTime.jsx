@@ -9,6 +9,8 @@ import {
   TimeCountCircle,
   LimitedTimeImgContainer,
   LimitedTimeImg,
+  TimerNumber,
+  TimerText,
 } from "../UI/LimtedTimeStyle";
 
 export const LimtedTime = () => {
@@ -20,20 +22,20 @@ export const LimtedTime = () => {
           <LimitedTimeTitle>Enhance Your <br/> Music Experience</LimitedTimeTitle>
           <Stack direction={"row"} spacing={2} marginTop = "50px">
             <TimeCountCircle>
-                <Typography variant="p" fontWeight={900} fontSize = {"18px"}>02</Typography>
-                <Typography variant="p" fontWeight={400} fontSize = {"12px"}>Days</Typography>
+                <TimerNumber>02</TimerNumber>
+                <TimerText>Days</TimerText>
             </TimeCountCircle>
             <TimeCountCircle>
-                <Typography variant="p" fontWeight={900} fontSize = {"18px"}>16</Typography>
-                <Typography variant="p" fontWeight={400} fontSize = {"12px"}>Hours</Typography>
+                <TimerNumber>16</TimerNumber>
+                <TimerText>Hours</TimerText>
             </TimeCountCircle>
             <TimeCountCircle>
-                <Typography variant="p" fontWeight={900} fontSize = {"18px"}>49</Typography>
-                <Typography variant="p" fontWeight={400} fontSize = {"12px"}>Minutes</Typography>
+                <TimerNumber>49</TimerNumber>
+                <TimerText>Minutes</TimerText>
             </TimeCountCircle>
             <TimeCountCircle>
-                <Typography variant="p" fontWeight={900} fontSize = {"18px"}>20</Typography>
-                <Typography variant="p" fontWeight={400} fontSize = {"12px"}>Seconds</Typography>
+                <TimerNumber>20</TimerNumber>
+                <TimerText>Seconds</TimerText>
             </TimeCountCircle>
           </Stack>
           <StyledButton $secondary>Buy now</StyledButton>

@@ -1,13 +1,13 @@
 import {Stack, Typography } from "@mui/material";
 import Slider from "react-slick";
 import { cardData } from "../Data/SliderData";
-import {  CardName,  CardTitle,  SlideCard, SlideCardImg, SlideCardLink, SlideCardLogo, SlideContainer, SliderMainStack, } from "../UI/HomeSliderStyle";
+import { CardName, CardTitle, SlideCard, SlideCardImg, SlideCardImgContainer, SlideCardLink, SlideCardLogo, SlideContainer, SliderMainStack } from "../UI/HomeSliderStyle";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
 export default function HomePageSlider() {
   var settings = {
     // className: "center",
-    centerMode: true,
+    // centerMode: true,
     // centerPadding: "-100px",
     fade: true,
     // dots: true,
@@ -52,7 +52,9 @@ export default function HomePageSlider() {
                 <ArrowForwardOutlinedIcon fontSize="30px" />
               </Stack>
             </Stack>
+            <SlideCardImgContainer>
             <SlideCardImg src={card.SlideCardImg} />
+            </SlideCardImgContainer>
           </Stack>
             </SlideCard>
           ))}

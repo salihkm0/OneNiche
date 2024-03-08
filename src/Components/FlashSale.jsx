@@ -1,136 +1,162 @@
-import { Box, Stack, Typography } from "@mui/material";
-import Cards from "./FlahSaleCards";
+import { Stack } from "@mui/material";
+import Slider from "react-slick";
 import {
-  ConDSpacer,
-  CountDownBox,
-  CountDownFS,
-  FSTypoH1,
-  FlashSaleH1,
-  HeadFS,
-  StyledFlashSale,
-} from "../UI/FlashSaleStyled";
-import { CardButtonContainer, CardMainBox} from "../UI/FlashSaleCardStyle";
+  BestSellingCardContainer,
+  BestSellingContainer,
+  BestSellingHead,
+  BestSellingHeadContainer,
+} from "../UI/BestSellingStyle";
 import { StyledButton } from "../UI/ButtonStyle";
-import { CardImg, CardImgContainer } from "../UI/MainCardStyle";
+import { MainCard } from "./MainCard";
+import MiniButton from "./MiniButton";
 
-export default function FlashSale({days,hours,minutes,seconds}) {
-    const Img1 ="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/appleairpodsenginUntitled.jpg"
-    const Img2 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvs-fUQPF6VCeFOp7Wx0jfzkKkeb_6UR5NQ&usqp=CAU"
-    const Img3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b4rI5AW28iO23T7DkbHy4RXbLUhSgtTEIQ&usqp=CAU"
-    const Img4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qsBkvANV-BhKx1dr1ym1umis0ALMauxPGg&usqp=CAU"
-    const Img5 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-yZ8nf8gQFNKvCRr2iaf3enZz3Pswin4UQ&usqp=CAU"
-    const Img6 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4FmLD0c-H6iyemLJr9jI63636h5_f75Qr1u_5z43cWgh4XOi0UEhZ2Ogul9alC8J9ck&usqp=CAU"  
+export const FlashSale = () => {
+  const Img1 =
+    "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/appleairpodsenginUntitled.jpg";
+  const Img2 =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvs-fUQPF6VCeFOp7Wx0jfzkKkeb_6UR5NQ&usqp=CAU";
+  const Img3 =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b4rI5AW28iO23T7DkbHy4RXbLUhSgtTEIQ&usqp=CAU";
+  const Img4 =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qsBkvANV-BhKx1dr1ym1umis0ALMauxPGg&usqp=CAU";
+  // const Img5 =
+  //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-yZ8nf8gQFNKvCRr2iaf3enZz3Pswin4UQ&usqp=CAU";
+  // const Img6 =
+  //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4FmLD0c-H6iyemLJr9jI63636h5_f75Qr1u_5z43cWgh4XOi0UEhZ2Ogul9alC8J9ck&usqp=CAU";
+  
+  var settings = {
+    // className: "center",
+    // centerMode: true,
+    centerPadding: "-10px",
+    // fade: true,
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    // pauseOnHover: false,
+    // focusOnSelect: true,
+
+    responsive: [
+      {
+        breakpoint: 2200,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+
+        },
+      },
+      {
+        breakpoint: 1519,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1357,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      // {
+      //   breakpoint: 1013,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 1,
+      //     // initialSlide: 2,
+      //   },
+      // },
+      {
+        breakpoint: 778,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          // initialSlide: 2,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 616,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 506,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+          // initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 433,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+        },
+      },
+      {
+        breakpoint: 381,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          // centerPadding: "-40px",
+        },
+      },
+    ],
+  };
   return (
     <>
-      <Box sx={StyledFlashSale}>
-        <Stack direction={"column"}>
-          <Box sx={HeadFS}>
-            <Stack direction={"row"}>
-              <Box sx={FlashSaleH1}>
-                <FSTypoH1>
-                Flash Sales
-                </FSTypoH1>
-                {/* <Typography variant="h1" sx={FSTypoH1}>
-                  Flash Sales
-                </Typography> */}
-              </Box>
-              <Box sx={CountDownBox}>
-                <Stack direction={"row"}>
-                  <Stack sx={CountDownFS} direction={"column"}>
-                    <Typography
-                      variant="h1"
-                      fontSize={7}
-                      marginLeft={1.3}
-                      marginTop={1}
-                    >
-                      Day
-                    </Typography>
-                    <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      {days}
-                    </Typography>
-                  </Stack>
-                  <Stack>
-                    <Typography variant="h1" sx={ConDSpacer}>
-                      :
-                    </Typography>
-                  </Stack>
-
-                  <Stack sx={CountDownFS} direction={"column"}>
-                    <Typography
-                      variant="h1"
-                      fontSize={7}
-                      marginLeft={1.3}
-                      marginTop={1}
-                    >
-                      Hours
-                    </Typography>
-                    <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      {hours}
-                    </Typography>
-                  </Stack>
-
-                  <Stack>
-                  <Typography variant="h1" sx={ConDSpacer}>
-                      :
-                    </Typography>
-                  </Stack>
-
-                  <Stack sx={CountDownFS} direction={"column"}>
-                    <Typography
-                      variant="h1"
-                      fontSize={7}
-                      marginLeft={1.3}
-                      marginTop={1}
-                    >
-                      Minutes
-                    </Typography>
-                    <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      {minutes}
-                    </Typography>
-                  </Stack>
-
-                  <Stack>
-                  <Typography variant="h1" sx={ConDSpacer}>
-                      :
-                    </Typography>
-                  </Stack>
-
-                  <Stack sx={CountDownFS} direction={"column"}>
-                    <Typography
-                      variant="h1"
-                      fontSize={7}
-                      marginLeft={1.3}
-                      marginTop={1}
-                    >
-                      Seconds
-                    </Typography>
-                    <Typography variant="h1" fontSize={18} marginLeft={1.3}>
-                      {seconds}
-                    </Typography>
-                  </Stack>
-                </Stack>
-              </Box>
-            </Stack>
-          </Box>
-
-          <Box sx={CardMainBox} justifyContent={"space-around"}>
-            <Stack direction={"row"}>
-            {/* <CardImg src={Img1}  /> */}
-
-              <Cards imgSrc ={Img1} title= "AirPods Max" star={3.5} price={1499}/>
-              <Cards imgSrc ={Img2} title= "Mechanical Keyboard" subtitle ="CEO" star={2} price={1000} />
-              <Cards imgSrc ={Img3} title= "Laptops" star={3} price={5000}/>
-              <Cards imgSrc ={Img4} title= "Watch Ultra" star={4.5} price={1299}/>
-            </Stack>    
-          </Box>
-
-
-
-          <CardButtonContainer>
-              <StyledButton $primary>View All</StyledButton>
-            </CardButtonContainer>
+      <BestSellingContainer>
+        <MiniButton text={"Today's"} />
+        <BestSellingHeadContainer>
+          <BestSellingHead>Hurry Up!</BestSellingHead>
+        </BestSellingHeadContainer>
+        <BestSellingCardContainer>
+          <Slider {...settings}>
+            <MainCard id={"1"} isNew={true}  imgSrc={Img1}  inFlashSale = {true} flashSaleOff = {25}/>
+            <MainCard id={"2"} isNew={false} imgSrc={Img2}  inFlashSale = {true} flashSaleOff = {50}/>
+            <MainCard id={"3"} isNew={false} imgSrc={Img3}  inFlashSale = {true} flashSaleOff = {10}/>
+            <MainCard id={"4"} isNew={true}  imgSrc={Img4}  inFlashSale = {true} flashSaleOff = {30}/>
+          </Slider>
+        </BestSellingCardContainer>
+        <Stack
+          direction={"row"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          marginTop = {"10px"}
+        >
+          <StyledButton $primary>View All</StyledButton>
         </Stack>
-      </Box>
+      </BestSellingContainer>
     </>
-  );
+  )
 }

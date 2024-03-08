@@ -1,41 +1,20 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import Header from "./Components/Header";
-import About from "./Pages/About";
-import Cart from "./Pages/Cart";
-import Checkout from "./Pages/Checkout";
-import Contact from "./Pages/Contact";
-import Home from "./Pages/Home";
-import ProductDetails from "./Pages/ProductDetails";
-import Wishlist from "./Pages/Wishlist";
 import { StyledContainer } from "./UI/ContainerStyle";
-import NotFoundPage from "./Pages/Error404";
+import Router from "./Router";
 import Footer from "./Components/Footer";
-import { UserProfile } from "./Pages/UserProfile";
 import ProductList from "./Pages/ProductList";
 
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Header />
         <StyledContainer>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/product/:id" element={<ProductDetails />} />
-            <Route path="/products/:catagory" element={<ProductList />} />
-            <Route path="/products/:catagory/:flter" element={<ProductList />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/user/profile" element={<UserProfile />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
+          <Router />
         </StyledContainer>
         <Footer/>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }

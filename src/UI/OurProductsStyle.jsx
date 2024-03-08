@@ -5,7 +5,7 @@ export const OurProductsContainer = styled.div`
   width: 100%;
   height: 100%;
   padding: 10px 0;
-  margin-top: 80px;
+  margin-top: 70px;
 `;
 export const OurProductsHeadContainer = styled.div`
   display: flex;
@@ -27,4 +27,8 @@ export const OurProductsCardContainer = styled.div`
   align-items : center;
   flex-wrap : wrap;
   gap : 2rem;
+  @media (max-width: 600px) {
+    padding: 0;
+    gap : 0;
+  }
 `;
