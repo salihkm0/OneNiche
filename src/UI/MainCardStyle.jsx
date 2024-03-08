@@ -94,6 +94,7 @@ export const CardOgPrice = styled.p`
   font-weight: 400;
   text-decoration: line-through;
   color: #5a5a5ae5;
+
 `;
 export const CardRatingStar = {
   fontSize: " 15px",

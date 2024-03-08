@@ -11,8 +11,6 @@ import { HomeContainerMain } from '../UI/HomeStyle'
 export default function Home() {
   return (
     <>
-    
-    
     <HomePageSlider/>
       <FlashSale/>
       <Category/>
@@ -20,7 +18,6 @@ export default function Home() {
       <LimtedTime/>
       <OurProducts/>
       <Feature/>
-      
     </>
   )
 }

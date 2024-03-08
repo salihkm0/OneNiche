@@ -132,13 +132,15 @@ export const BestSelling = () => {
       },
     ],
   };
+  const catagory ="bestselling "
   return (
     <>
       <BestSellingContainer>
         <MiniButton text={"This Month"} />
         <BestSellingHeadContainer>
           <BestSellingHead>Best Selling Products</BestSellingHead>
-          <StyledButton $primary>View All</StyledButton>
+          
+          <StyledButton to={`/products/${catagory}`} $primary>View All</StyledButton>
         </BestSellingHeadContainer>
         <BestSellingCardContainer>
           <Slider {...settings}>

@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
-export const StyledButton = styled.button`
+export const StyledButton = styled(Link)`
   /* background-color:#ff7300;  */
   background-color: ${(props) => (props.$primary ? "#ff7300" : "#00ff66")};
   color: #fff;
   border: none;
   height: 50px;
   width: 120px;
+display:grid;
+  place-items: center;
   font-size: 12px;
   border-radius: 5px;
   &:hover {
@@ -29,5 +32,5 @@ export const StyledButton = styled.button`
   @media (max-width: 600px) {
     width: 60px;
   }
-  
 `;
+

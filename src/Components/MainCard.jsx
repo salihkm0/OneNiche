@@ -77,7 +77,7 @@ export const MainCard = ({ id, isNew, imgSrc, inFlashSale, flashSaleOff }) => {
           <CardOffPrice>$39.99</CardOffPrice>
           <CardOgPrice>$69.99</CardOgPrice>
         </Stack>
-        <Stack
+        <Stack 
           direction={"row"}
           spacing={1}
           alignItems={"center"}

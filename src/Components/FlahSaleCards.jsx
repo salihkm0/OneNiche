@@ -1,3 +1,4 @@
+
 import { Rating, Stack, Typography } from "@mui/material";
 import {
   CardBody,
@@ -19,6 +20,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 export const MainCard = ({ id, isNew, imgSrc, inFlashSale, flashSaleOff }) => {
   const [favorite, setFavorite] = useState(false);
   return (
@@ -34,7 +36,6 @@ export const MainCard = ({ id, isNew, imgSrc, inFlashSale, flashSaleOff }) => {
         )}
       </FavoriteIconContainer>
       {isNew ? <NewTimeTag>New</NewTimeTag> : <></>}
-
       <Link to={`/product/${id}`}>
         <CardImgContainer>
           {imgSrc ? (

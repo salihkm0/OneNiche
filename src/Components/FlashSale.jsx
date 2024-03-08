@@ -110,7 +110,6 @@ export const FlashSale = () => {
           slidesToScroll: 1,
           centerMode: true,
           // centerPadding: "-40px",
-
           // initialSlide: 2,
         },
       },
