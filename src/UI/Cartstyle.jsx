@@ -171,14 +171,14 @@ export const PlaceOrderBtn = styled.button`
 
 export const CartCard = styled.div`
   /* width :100%; */
-  height: 150px;
+  height: 170px;
   /* background : #ccc; */
   /* padding: 10px 20px; */
   margin:20px 10px;
   display: flex;
 `;
 export const CartCardImgContainer = styled.div`
-  width: 150px;
+  width: 190px;
   height: 100%;
   display: grid;
   place-items: center;
@@ -240,6 +240,28 @@ export const CartCardBtnsContainer = styled.div`
   position : absolute;
   bottom : 0;
 `;
+export const ProdCountContainer = styled.div`
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  gap :.2rem;
+  border : 1px solid #000000;
+  /* background : #ccc; */
+  width : 60px;
+  margin : 10px 0;
+  cursor : pointer;
+`
+export const ProdCount = styled.p`
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  color:#000;
+  border-left : 1px solid #000000;
+  border-right : 1px solid #000000;
+  display : grid;
+  place-items : center;
+  width : 20px;
+`
 export const CartCardBtn = styled.button`
   background: transparent;
   color: #000000;
@@ -255,3 +277,7 @@ export const CartCardBtn = styled.button`
   }
 
 `
+
+export const CountIconStyle = {
+  fontSize : '13px',
+}
