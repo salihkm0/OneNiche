@@ -64,8 +64,8 @@ export const CartAddressButton = styled.button`
 export const CartSubContainer = styled.div`
   background-color: transparent;
   width: 100%;
-  height: 80vh;
-  padding: 0 20px;
+  height: auto;
+  /* padding: 20px; */
   margin: 20px 0;
   border: 0.5px solid #828282c2;
   border-radius: 5px;
@@ -143,7 +143,7 @@ export const PlaceOrderBtnContainer = styled.div`
   padding: 10px;
   position: absolute;
   bottom: 0;
-  right :0;
+  right: 0;
 `;
 
 export const PlaceOrderBtn = styled.button`
@@ -168,3 +168,90 @@ export const PlaceOrderBtn = styled.button`
     font-weight : bold;
   } */
 `;
+
+export const CartCard = styled.div`
+  /* width :100%; */
+  height: 150px;
+  /* background : #ccc; */
+  /* padding: 10px 20px; */
+  margin:20px 10px;
+  display: flex;
+`;
+export const CartCardImgContainer = styled.div`
+  width: 150px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border: 0.5px solid #828282c2;
+`;
+export const CartCardImg = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+export const CartCarBody = styled.div`
+  width: 72%;
+  /* background : #ccc; */
+  margin-left: 10px;
+  padding-left :  10px;
+  /* border: 0.5px solid #828282c2; */
+  position : relative;
+
+`;
+export const CartProdName = styled.h3`
+  font-size: 18px;
+  font-weight: 400;
+  margin : 5px 0;
+`;
+export const CartProdDisc = styled.h3`
+  font-size: 16px;
+  font-weight: 400;
+  color : #bbbbbb;
+  margin : 5px 0;
+`;
+export const CartCardPriceContainer = styled.div`
+  display : flex;
+  gap :.5rem;
+  align-items : center;
+  margin : 5px 0;
+
+`;
+export const CartCardOGPrice = styled.p`
+  font-size: 13px;
+  font-weight: 400;
+  color : #000;
+  text-decoration: line-through;
+`;
+export const CartCardOffPrice = styled.p`
+  font-size: 15px;
+  font-weight: 500;
+  color : #000;
+`;
+export const CartCardOff = styled.p`
+  font-size: 11px;
+  font-weight: 400;
+  color : #10962b;
+`;
+export const CartCardBtnsContainer = styled.div`
+  display : grid;
+  gap : .5rem;
+  grid-template-columns : 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+  position : absolute;
+  bottom : 0;
+`;
+export const CartCardBtn = styled.button`
+  background: transparent;
+  color: #000000;
+  outline: none;
+  border: .5px  solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  &:active {
+    opacity: 0.7;
+  }
+
+`

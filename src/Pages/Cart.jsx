@@ -3,8 +3,20 @@ import {
   CartAddress,
   CartAddressButton,
   CartAddressContainer,
+  CartCarBody,
+  CartCard,
+  CartCardBtn,
+  CartCardBtnsContainer,
+  CartCardImg,
+  CartCardImgContainer,
+  CartCardOff,
+  CartCardOffPrice,
+  CartCardOGPrice,
+  CartCardPriceContainer,
   CartLeftContainer,
   CartMainContainer,
+  CartProdDisc,
+  CartProdName,
   CartRightContainer,
   CartRightSubContainer,
   CartSubContainer,
@@ -30,7 +42,113 @@ export const Cart = () => {
           </CartAddress>
           <CartAddressButton>Change</CartAddressButton>
         </CartAddressContainer>
-        <CartSubContainer></CartSubContainer>
+        <CartSubContainer>
+          <CartCard>
+            <CartCardImgContainer>
+              <CartCardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            </CartCardImgContainer>
+            <CartCarBody>
+              <CartProdName>
+                RK ROYAL KLUDGE RK61 Mechanical Keyboard
+              </CartProdName>
+              <CartProdDisc>RGB,Mechanichal</CartProdDisc>
+              <CartCardPriceContainer>
+                <CartCardOGPrice>$59.99</CartCardOGPrice>
+                <CartCardOffPrice>39.99</CartCardOffPrice>
+                <CartCardOff>38% off</CartCardOff>
+              </CartCardPriceContainer>
+              <CartCardBtnsContainer>
+                <CartCardBtn>Buy now</CartCardBtn>
+                <CartCardBtn>Remove</CartCardBtn>
+                <CartCardBtn>Save for later</CartCardBtn>
+              </CartCardBtnsContainer>
+            </CartCarBody>
+          </CartCard>
+          <CartCard>
+            <CartCardImgContainer>
+              <CartCardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            </CartCardImgContainer>
+            <CartCarBody>
+              <CartProdName>
+                RK ROYAL KLUDGE RK61 Mechanical Keyboard
+              </CartProdName>
+              <CartProdDisc>RGB,Mechanichal</CartProdDisc>
+              <CartCardPriceContainer>
+                <CartCardOGPrice>$59.99</CartCardOGPrice>
+                <CartCardOffPrice>39.99</CartCardOffPrice>
+                <CartCardOff>38% off</CartCardOff>
+              </CartCardPriceContainer>
+              <CartCardBtnsContainer>
+                <CartCardBtn>Buy now</CartCardBtn>
+                <CartCardBtn>Remove</CartCardBtn>
+                <CartCardBtn>Save for later</CartCardBtn>
+              </CartCardBtnsContainer>
+            </CartCarBody>
+          </CartCard>
+          <CartCard>
+            <CartCardImgContainer>
+              <CartCardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            </CartCardImgContainer>
+            <CartCarBody>
+              <CartProdName>
+                RK ROYAL KLUDGE RK61 Mechanical Keyboard
+              </CartProdName>
+              <CartProdDisc>RGB,Mechanichal</CartProdDisc>
+              <CartCardPriceContainer>
+                <CartCardOGPrice>$59.99</CartCardOGPrice>
+                <CartCardOffPrice>39.99</CartCardOffPrice>
+                <CartCardOff>38% off</CartCardOff>
+              </CartCardPriceContainer>
+              <CartCardBtnsContainer>
+                <CartCardBtn>Buy now</CartCardBtn>
+                <CartCardBtn>Remove</CartCardBtn>
+                <CartCardBtn>Save for later</CartCardBtn>
+              </CartCardBtnsContainer>
+            </CartCarBody>
+          </CartCard>
+          <CartCard>
+            <CartCardImgContainer>
+              <CartCardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            </CartCardImgContainer>
+            <CartCarBody>
+              <CartProdName>
+                RK ROYAL KLUDGE RK61 Mechanical Keyboard
+              </CartProdName>
+              <CartProdDisc>RGB,Mechanichal</CartProdDisc>
+              <CartCardPriceContainer>
+                <CartCardOGPrice>$59.99</CartCardOGPrice>
+                <CartCardOffPrice>39.99</CartCardOffPrice>
+                <CartCardOff>38% off</CartCardOff>
+              </CartCardPriceContainer>
+              <CartCardBtnsContainer>
+                <CartCardBtn>Buy now</CartCardBtn>
+                <CartCardBtn>Remove</CartCardBtn>
+                <CartCardBtn>Save for later</CartCardBtn>
+              </CartCardBtnsContainer>
+            </CartCarBody>
+          </CartCard>
+          <CartCard>
+            <CartCardImgContainer>
+              <CartCardImg src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png" />
+            </CartCardImgContainer>
+            <CartCarBody>
+              <CartProdName>
+                RK ROYAL KLUDGE RK61 Mechanical Keyboard
+              </CartProdName>
+              <CartProdDisc>RGB,Mechanichal</CartProdDisc>
+              <CartCardPriceContainer>
+                <CartCardOGPrice>$59.99</CartCardOGPrice>
+                <CartCardOffPrice>39.99</CartCardOffPrice>
+                <CartCardOff>38% off</CartCardOff>
+              </CartCardPriceContainer>
+              <CartCardBtnsContainer>
+                <CartCardBtn>Buy now</CartCardBtn>
+                <CartCardBtn>Remove</CartCardBtn>
+                <CartCardBtn>Save for later</CartCardBtn>
+              </CartCardBtnsContainer>
+            </CartCarBody>
+          </CartCard>
+        </CartSubContainer>
       </CartLeftContainer>
       <CartRightContainer>
         <CartRightSubContainer>
@@ -63,12 +181,10 @@ export const Cart = () => {
             <TotalAmt>$1459.35</TotalAmt>
           </TotalAmtContainer>
           <DiscountDiscription>
-          You will save $495.19 on this order
+            You will save $495.19 on this order
           </DiscountDiscription>
           <PlaceOrderBtnContainer>
-            <PlaceOrderBtn>
-            PLACE ORDER
-            </PlaceOrderBtn>
+            <PlaceOrderBtn>PLACE ORDER</PlaceOrderBtn>
           </PlaceOrderBtnContainer>
         </CartRightSubContainer>
       </CartRightContainer>
