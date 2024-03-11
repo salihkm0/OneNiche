@@ -169,7 +169,7 @@ export const PlaceOrderBtn = styled.button`
   } */
 `;
 
-export const CartCard = styled.div`
+export const CartCardCont = styled.div`
   /* width :100%; */
   height: 170px;
   /* background : #ccc; */
